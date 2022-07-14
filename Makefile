@@ -25,11 +25,11 @@ downloads/catalog_numbers-analysis.zip:
 
 data/catalognumbertrend.png: downloads/catalog_numbers-analysis.zip
 	mkdir -p data
-	unzip $^ $@
+	unzip -o $^ $@
 
 data/linktrend.png: downloads/catalog_numbers-analysis.zip
 	mkdir -p data
-	unzip $^ $@
+	unzip -o $^ $@
 
 ###############################################################################
 # End of archived analytical runs section
