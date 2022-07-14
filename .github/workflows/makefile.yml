@@ -28,6 +28,11 @@ jobs:
 
     - name: Build PDF
       run: make pdf
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: article.pdf
+        path: build/article.pdf
     
     
       
