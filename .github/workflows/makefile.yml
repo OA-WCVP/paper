@@ -14,6 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Install tex and lualatex
+      run: apt-install -y texlive-latex-base
+      
     - name: Install pandoc
       run: wget --quiet https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb; sudo dpkg -i pandoc-2.18-1-amd64.deb
 
