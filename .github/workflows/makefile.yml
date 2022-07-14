@@ -17,6 +17,9 @@ jobs:
     - name: Install pandoc
       run: sudo apt-get install -y pandoc
 
+    - name: Check pandoc version
+      run: pandoc -v
+
     - name: Build PDF
       run: make pdf
       
