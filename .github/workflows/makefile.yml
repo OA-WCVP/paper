@@ -20,8 +20,8 @@ jobs:
     - name: Install tex and lualatex
       run: sudo apt install -y texlive-latex-base
       
-    - name: Install texlive-math-extra
-      run: sudo apt install -y texlive-math-extra
+    - name: Install texlive-science-doc texlive-science
+      run: sudo apt install -y texlive-science-doc texlive-science
       
     - name: Install pandoc
       run: wget --quiet https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb; sudo dpkg -i pandoc-2.18-1-amd64.deb
