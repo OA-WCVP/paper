@@ -15,6 +15,31 @@ This article repository is part of the OA-WCVP github organisation. Its sibling 
 
 The article text is formatted in `Markdown` and is compiled to an output format (PDF, word etc) using `pandoc`. Execution of the compilation process is managed with the build tool `make`.
 
+### Article structure
+
+A separate markdown file holds the text for each of the sections in the article:
+
+- Summary
+- Keywords
+- Societal Impact Statement
+- Introduction
+- Materials and Methods
+- Results
+- Discussion
+- Acknowledgements
+- Author Contribution
+- Data Availability Statement
+- Conflict of Interest Statement 
+
+These are concatenated together to form a single markdown file, which is then processed using `pandoc` and `lualatex` to create a PDF output.
+
+### How to run the compilation
+
+TODO
+
+### Cleaning up downloaded and processed files
+
+TODO
 
 ## Useful links
 
