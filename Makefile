@@ -159,6 +159,11 @@ build/article.pdf: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-i
 
 pdf: build/article.pdf
 
+#------------------------------------------------------------------------------
+# All versions
+#------------------------------------------------------------------------------
+all: build/article.html build/article.docx build/article.pdf
+
 ###############################################################################
 # End of build outputs section
 ###############################################################################
