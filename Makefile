@@ -64,7 +64,7 @@ pandoc-filters/author-info-blocks.lua:
 # Concatenate all source markdown files to a single output
 ###############################################################################
 # Define variable holding all parts of the article, listed in order
-article_parts=00-preamble.md \
+article_parts=00-preamble.yaml \
 			01-summary.md \
 			02-keywords.md \
 			03-societal_impact_statement.md \
