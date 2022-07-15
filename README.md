@@ -9,11 +9,7 @@ The study of vascular plants has benefitted from recent efforts in digitisation,
 
 ### Project structure
 
-This article repository is part of the OA-WCVP github organisation. Its sibling repositories are responsible for data access and analysis; this repository integrates their archived analytical runs into the paper output. 
-
-### Pre-requisites
-
-The article text is formatted in `Markdown` and is compiled to an output format (PDF, word etc) using `pandoc`. Execution of the compilation process is managed with the build tool `make`.
+This article repository is part of the OA-WCVP github organisation. Its sibling repositories ([gbif-literature](https://github.com/OA-WCVP/gbif-literature), [catalog-number-access](https://github.com/OA-WCVP/catalog-number-access) etc) are responsible for data access and analysis; this repository integrates their archived analytical runs into the paper output. 
 
 ### Article structure
 
@@ -30,16 +26,39 @@ A separate markdown file holds the text for each of the sections in the article:
 - Author Contribution
 - Data Availability Statement
 - Conflict of Interest Statement 
+- References
 
-These are concatenated together to form a single markdown file, which is then processed using `pandoc` and `lualatex` to create a PDF output.
+The document compilation process concatenates these together to form a single output.
 
-### How to run the compilation
+### Document compilation
 
-TODO
+#### Automated compilation
 
-### Cleaning up downloaded and processed files
+A github action compiles the output document when a tag is applied to the repository. The PDF version of the article is made available as a build artifact.
 
-TODO
+#### Local document compilation
+
+##### Pre-requisites
+
+The article text is formatted in `Markdown` and is compiled to an output format (PDF, word etc) using `pandoc`. Execution of the compilation process is managed with the build tool `make`.
+Ensure that `make`, `pandoc` and `lualatex` are installed and available from your `PATH`, ie that you can execute the following in a shell:
+- `make -v`
+- `pandoc -v`
+- `lualatex -v`
+
+##### How to run the compilation
+
+The article can be compiled into several formats, ie pdf, docx and html.
+
+- PDF format: `make build/article.pdf` or shorthand `make pdf`
+- docx format: `make build/article.docx` or shorthand `make docx`
+- HTML format: `make build/article.html` or shorthand `make html`
+- All formats: `make all`
+
+##### Cleaning up downloaded and processed files
+
+- `make clean`
+- `make sterilise`
 
 ## Useful links
 
