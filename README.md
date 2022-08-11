@@ -48,6 +48,8 @@ Ensure that `make`, `pandoc` and `lualatex` are installed and available from you
 - `pandoc -v`
 - `lualatex -v`
 
+Note: if you are compiling the article on Ubuntu, the `pandoc` version which is in the standard repository is not compatible with the lua filters that are used in this repository. Please install a more up-to-date version through the [pandoc repository](https://github.com/jgm/pandoc/releases). The compilation is tested using Ubuntu 20.04 and pandoc version 2.19.1.
+
 ##### How to run the compilation
 
 The article can be compiled into several formats, ie pdf, docx and html.
