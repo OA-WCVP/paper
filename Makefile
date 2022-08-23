@@ -98,9 +98,12 @@ build/article.md: $(article_parts)
 # Copy charts to build directory
 ###############################################################################
 build/%.png: data/%.png
+	mkdir -p build
 	cp $^ $@
 
-charts: build/linktrend.png build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
+charts=build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
+
+allcharts: $(charts)
 
 ###############################################################################
 # End of chart copy section
