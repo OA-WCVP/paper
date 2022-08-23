@@ -31,3 +31,4 @@
 ![Open access TDWG WGSRPD level 2](oatrend-dist-2.png)
 
 ![Open access TDWG WGSRPD level 3 - tax novs only](oatrend-dist-2-taxnov.png)
+

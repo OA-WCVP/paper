@@ -81,3 +81,4 @@ DOIs from IPNI were used to assess the open access availability of literature, b
 #### Literature availability comparators
 
 Open access takeup compared to that in (i) gbif-literature and (ii) in the articles published in the major journal Phytotaxa.
+
