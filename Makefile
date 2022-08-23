@@ -36,11 +36,7 @@ downloads/ipni-oa-analysis.zip:
 	mkdir -p downloads
 	wget -O $@ $(archived_analysis_url_ipni_oa)
 
-data/oatrend.png: downloads/ipni-oa-analysis.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/oastatustrend.png: downloads/ipni-oa-analysis.zip
+data/oa%.png: downloads/ipni-oa-analysis.zip
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -101,10 +97,10 @@ build/article.md: $(article_parts)
 ###############################################################################
 # Copy charts to build directory
 ###############################################################################
-charts: build/linktrend.png build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
-
 build/%.png: data/%.png
 	cp $^ $@
+
+charts: build/linktrend.png build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
 
 ###############################################################################
 # End of chart copy section
