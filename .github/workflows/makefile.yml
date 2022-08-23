@@ -25,13 +25,23 @@ jobs:
     - name: Check pandoc version
       run: pandoc -v
 
-    - name: Build PDF
-      run: make pdf
+    - name: Build all formats (PDF, docx and HTML)
+      run: make all
       
     - uses: actions/upload-artifact@v3
       with:
         name: article.pdf
         path: build/article.pdf
-    
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: article.docx
+        path: build/article.docx
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: article.html
+        path: build/article.html
+
     
       
