@@ -12,6 +12,6 @@
  ![Catalog number trends](catalognumbertrend.png)
 
 
- ## Availability of literature
+## Availability of literature
 
 
