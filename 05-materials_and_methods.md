@@ -9,6 +9,7 @@ The World Checklist of Vascular Plants is a globally comprehensive taxonomy for 
 ### International Plant Names Index (IPNI)
  
 The International Plant Names Index (IPNI) is an editorially-managed nomenclatural database containing the name and basic bibliographic details about the first publication of the names of vascular plants (Tracheophyta) as governed by the International Code of Nomenclature for algae, fungi and plants (ICNafp). The project started compiling data in the 1880s as *Index Kewensis*, with an editorial team based at the Royal Botanic Gardens, Kew, funded by a legacy from Charles Darwin. The base data recorded for a single nomenclatural event has expanded over the years at the following points:
+
 - **1997** - Type citation data from the protologue added for taxonomic novelties at rank of species or below
 - **2012** - Information about the electronic publishing of nomenclatural acts added - the Digital Object Identifier (DOI) of the containing article, a flag to indicate if the containing article was published electronically and a flag to indicate if the description or diagnosis was written in English (prior to 2012 Latin was the only permissible language for description or diagnosis).
 
@@ -33,6 +34,7 @@ Ref "The State of OA: A large-scale analysis of the prevalence and impact of Ope
 
 ## Data integration
 WCVP was used to give a globally comprehensive taxonomy with distribution. as each scientific name in WCVP is accompanied by an identifier for the scientific name in IPNI, two classes of additional data are added: 
+
 1. Type citation data (for the data published since 1997).
 1. Digital object identifiers (DOIs) for the containing article (for data published since 2012). 
 
