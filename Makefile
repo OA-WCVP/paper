@@ -14,7 +14,8 @@
 # Because the repo is currently private, its is not possible to automate its 
 # download (it could possibly be done with a python github client, which could 
 # authenticate to ensure access. The file has temporarily been copied to dropbox: 
-archived_analysis_url_catalog_numbers=https://www.dropbox.com/s/jxilrgofsuuhaqo/catalog_numbers-analysis.zip?dl=0
+archived_analysis_url_catalog_numbers=https://www.dropbox.com/s/yqmz9qb60k25bwg/catalog-number-access-data-20220823-195702.zip?dl=0
+archived_analysis_url_ipni_oa=https://www.dropbox.com/s/i06omvj0i8jn1l1/ipni-oa-data-20220823-195714.zip?dl=0
 
 catalog_numbers_chart_catalognumbertrend=data/catalognumbertrend.png
 catalog_numbers_chart_linktrend=data/linktrend.png
@@ -28,6 +29,18 @@ data/catalognumbertrend.png: downloads/catalog_numbers-analysis.zip
 	unzip -o $^ $@
 
 data/linktrend.png: downloads/catalog_numbers-analysis.zip
+	mkdir -p data
+	unzip -o $^ $@
+
+downloads/ipni-oa-analysis.zip:
+	mkdir -p downloads
+	wget -O $@ $(archived_analysis_url_ipni_oa)
+
+data/oatrend.png: downloads/ipni-oa-analysis.zip
+	mkdir -p data
+	unzip -o $^ $@
+
+data/oastatustrend.png: downloads/ipni-oa-analysis.zip
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -88,13 +101,11 @@ build/article.md: $(article_parts)
 ###############################################################################
 # Copy charts to build directory
 ###############################################################################
-charts=build/linktrend.png build/catalognumbertrend.png
+charts: build/linktrend.png build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
 
-build/linktrend.png: data/linktrend.png
+build/%.png: data/%.png
 	cp $^ $@
 
-build/catalognumbertrend.png: data/catalognumbertrend.png
-	cp $^ $@
 ###############################################################################
 # End of chart copy section
 ###############################################################################
