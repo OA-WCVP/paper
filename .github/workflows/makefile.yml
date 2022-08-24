@@ -44,8 +44,8 @@ jobs:
       with:
         repo: 'OA-WCVP/phytotaxa-oa'
         version: 'tags/v0.0.1'
-        file: "phytotaxa-oa.zip"
-        target: 'downloads/phytotaxa-oa.zip'
+        file: "phytotaxa-oa-data.zip"
+        target: 'downloads/phytotaxa-oa-data.zip'
         token: ${{ secrets.PAT }}
 
     - name: Sanity check artifact download
