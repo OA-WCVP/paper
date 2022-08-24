@@ -12,9 +12,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
-    - name: Download IPNI-OA release artifact
-      run: bash bin/download-ipni-oa-artifacts.bash ${{ secrets.PAT }}
+
+    - name: Create download dir
+      run: mkdir -p downloads
+
+    - uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: 'OA-WCVP/ipni-oa'
+        version: 'tags/v0.1.0'
+        regex: true
+        file: ".*data.*\\.zip"
+        target: 'downloads/'
+        token: ${{ secrets.PAT }}
+  
+#     - name: Download IPNI-OA release artifact
+#       run: bash bin/download-ipni-oa-artifacts.bash ${{ secrets.PAT }}
 
     - name: Sanity check artifact download
       run: ls -ltra downloads
