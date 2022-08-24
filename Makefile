@@ -6,29 +6,26 @@
 # dependencies of the generated outputs - so that an edit in a source text will 
 # trigger the regeneration of the compiled output.
 
-###############################################################################
-# Define URLs and download for archived analytical runs
-###############################################################################
-# Note - this is actually stored as part of a github release: 
-# https://github.com/OA-WCVP/catalog-number-access/releases/download/v0.1/data-20220701-122423.zip
-# Because the repo is currently private, its is not possible to automate its 
-# download (it could possibly be done with a python github client, which could 
-# authenticate to ensure access. The file has temporarily been copied to dropbox: 
-archived_analysis_url_catalog_numbers=https://www.dropbox.com/s/yqmz9qb60k25bwg/catalog-number-access-data-20220823-195702.zip?dl=0
-archived_analysis_url_ipni_oa=https://www.dropbox.com/s/i06omvj0i8jn1l1/ipni-oa-data-20220823-195714.zip?dl=0
+python_launch_cmd=python
+python_launch_cmd=winpty python
 
-catalog_numbers_chart_catalognumbertrend=data/catalognumbertrend.png
-catalog_numbers_chart_linktrend=data/linktrend.png
+###############################################################################
+# Gather results of archived analytical runs
+###############################################################################
+# These targets must authenticate to github nd therefore need an access_token 
+# which must be stored in an environment variable named "GITHUB_TOKEN"
 
-downloads/catalog_numbers-analysis.zip:
+archived_analyses: downloads/ipni-oa-data.zip downloads/phytotaxa-oa-data.zip downloads/gbif-literature-data.zip downloads/catalog-number-access-data.zip
+
+downloads/%-data.zip: util/download-artifact.py
 	mkdir -p downloads
-	wget -O $@ $(archived_analysis_url_catalog_numbers)
+	$(python_launch_cmd) util/download-artifact.py $*
 
-data/catalognumbertrend.png: downloads/catalog_numbers-analysis.zip
+data/catalognumbertrend.png: downloads/catalog-number-access-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
-data/linktrend.png: downloads/catalog_numbers-analysis.zip
+data/linktrend.png: downloads/catalog-number-access-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -36,7 +33,7 @@ downloads/ipni-oa-analysis.zip:
 	mkdir -p downloads
 	wget -O $@ $(archived_analysis_url_ipni_oa)
 
-data/oa%.png: downloads/ipni-oa-analysis.zip
+data/oa%.png: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
