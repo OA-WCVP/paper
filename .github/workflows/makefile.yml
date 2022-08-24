@@ -26,7 +26,7 @@ jobs:
       run: pandoc -v
 
     - name: Download IPNI-OA release artifact
-      run: bash bin/download-ipni-oa-artifacts.bash
+      run: bash bin/download-ipni-oa-artifacts.bash ${{ secrets.PAT }}
 
     - name: Sanity check artifact download
       run: ls -ltra downloads

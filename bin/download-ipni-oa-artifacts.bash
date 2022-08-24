@@ -1,8 +1,9 @@
 #!/bin/bash
+token=$1
 USER=OA-WCVP
 REPO=ipni-oa
 GITHUB_API=https://api.github.com/repos/${USER}/${REPO}/releases/latest
-token=${{ secrets.PAT }}
+
 ARTIFACT=data
 
 echo "Querying GitHub for the latest $ARTIFACT artifact attached to $REPO release using $GITHUB_API" 
