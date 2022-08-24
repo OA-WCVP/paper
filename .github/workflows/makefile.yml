@@ -21,7 +21,7 @@ jobs:
         repo: 'OA-WCVP/ipni-oa'
         version: 'tags/v0.1.0'
         file: "ipni-oa-data.zip"
-        target: 'downloads/'
+        target: 'downloads/ipni-oa-data.zip'
         token: ${{ secrets.PAT }}
 
     - uses: dsaltares/fetch-gh-release-asset@master
@@ -29,7 +29,7 @@ jobs:
         repo: 'OA-WCVP/catalog-number-access'
         version: 'tags/v0.1.1'
         file: "catalog-number-access-data.zip"
-        target: 'downloads/'
+        target: 'downloads/catalog-number-access-data.zip'
         token: ${{ secrets.PAT }}
 
     - uses: dsaltares/fetch-gh-release-asset@master
@@ -37,7 +37,7 @@ jobs:
         repo: 'OA-WCVP/gbif-literature'
         version: 'tags/v0.0.1'
         file: "gbif-literature-data.zip"
-        target: 'downloads/'
+        target: 'downloads/gbif-literature-data.zip'
         token: ${{ secrets.PAT }}
 
     - uses: dsaltares/fetch-gh-release-asset@master
@@ -45,7 +45,7 @@ jobs:
         repo: 'OA-WCVP/phytotaxa-oa'
         version: 'tags/v0.0.1'
         file: "phytotaxa-oa.zip"
-        target: 'downloads/'
+        target: 'downloads/phytotaxa-oa.zip'
         token: ${{ secrets.PAT }}
 
     - name: Sanity check artifact download
