@@ -27,7 +27,6 @@ jobs:
 
     - uses: dsaltares/fetch-gh-release-asset@master
       with:
-        name: 'Fetch OA analysis release files'
         repo: 'oa-wcvp/ipni-oa'
         version: 'tags/v0.1.0'
         file: 'ipni-oa-data-20220823-195714.zip'
