@@ -13,6 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Download IPNI-OA release artifact
+      run: bash bin/download-ipni-oa-artifacts.bash ${{ secrets.PAT }}
+
+    - name: Sanity check artifact download
+      run: ls -ltra downloads
+
     - name: Installation 
       run: sudo apt-get update -y
       
@@ -24,12 +30,6 @@ jobs:
 
     - name: Check pandoc version
       run: pandoc -v
-
-    - name: Download IPNI-OA release artifact
-      run: bash bin/download-ipni-oa-artifacts.bash ${{ secrets.PAT }}
-
-    - name: Sanity check artifact download
-      run: ls -ltra downloads
 
     - name: Build all formats (PDF, docx and HTML)
       run: make all
