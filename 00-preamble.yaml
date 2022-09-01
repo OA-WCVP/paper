@@ -10,20 +10,25 @@ author:
             - rbgk
         correspondence: "yes"
         email: "n.nicolson@kew.org"
+        orcid: 0000-0003-3700-4884
     - Maarten Trekels:
         institute:
             - be
         email: "maarten.trekels@plantentuinmeise.be"
+        orcid: 0000-0001-8282-8765
     - Quentin J Groom:
         institute:
             - be
         email: "quentin.groom@plantentuinmeise.be"
+        orcid: 0000-0002-0596-5376
     - Sandra Knapp:
         institute:
             - nhm
         email: "s.knapp@nhm.ac.uk"
+        orcid: 0000-0001-7698-3945
     - Alan J Paton:
         institute:
             - rbgk
         email: "a.paton@kew.org"
+        orcid: 0000-0002-6052-6675
 ---
