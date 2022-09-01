@@ -3,6 +3,7 @@ from github import Github
 import requests
 from pathlib import Path   
 import os
+import sys
 
 organization='OA-WCVP'
 
@@ -14,6 +15,9 @@ def main():
 
     # Create a Github instance, using an access token:
     access_token = os.getenv('GITHUB_TOKEN')
+    if access_token is None:
+        print('Environment variable {} containing a valid GitHub personal access token is required'.format('GITHUB_TOKEN'))
+        sys.exit(-1)
     g = Github(access_token)
     repo = g.get_repo('{org}/{repo}'.format(org=organization,repo=args.repo))
     release = repo.get_latest_release()
