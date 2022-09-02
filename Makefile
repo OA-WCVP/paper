@@ -98,7 +98,16 @@ build/%.png: data/%.png
 	mkdir -p build
 	cp $^ $@
 
-charts=build/catalognumbertrend.png build/oatrend.png build/oatrendpc.png build/oastatustrend.png build/oastatustrendpc.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
+oatrends_charts:=build/oatrend.png build/oastatustrend.png
+oatrends_pc_charts:=build/oatrendpc.png build/oastatustrendpc.png
+dist1_charts:=build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png
+dist1_pc_charts:=build/oatrend-dist-1-pc.png build/oatrend-dist-1-taxnov-pc.png
+dist2_charts:=build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
+dist2_pc_charts:=build/oatrend-dist-2-pc.png build/oatrend-dist-2-taxnov-pc.png
+dist3_charts:=build/oatrend-dist-3.png build/oatrend-dist-3-taxnov.png
+dist3_pc_charts:=build/oatrend-dist-3-pc.png build/oatrend-dist-3-taxnov-pc.png
+
+charts=build/catalognumbertrend.png $(oatrends_charts) $(oatrends_pc_charts) $(dist1_charts) $(dist1_pc_charts) $(dist2_charts) $(dist2_pc_charts) $(dist3_charts) $(dist3_pc_charts)
 
 allcharts: $(charts)
 
