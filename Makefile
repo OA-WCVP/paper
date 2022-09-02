@@ -98,7 +98,7 @@ build/%.png: data/%.png
 	mkdir -p build
 	cp $^ $@
 
-charts=build/catalognumbertrend.png build/oatrend.png build/oastatustrend.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
+charts=build/catalognumbertrend.png build/oatrend.png build/oatrendpc.png build/oastatustrend.png build/oastatustrendpc.png build/oatrend-dist-1.png build/oatrend-dist-1-taxnov.png build/oatrend-dist-2.png build/oatrend-dist-2-taxnov.png
 
 allcharts: $(charts)
 
