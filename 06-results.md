@@ -18,9 +18,13 @@
 
 ![Open access trend](oatrend.png)
 
+![Open access trend (pc)](oatrendpc.png)
+
 ### Open access status
 
 ![Open access status trend](oastatustrend.png)
+
+![Open access status trend (pc)](oastatustrendpc.png)
 
 ### Open access by taxon distribution
 
