@@ -89,5 +89,11 @@ jobs:
         name: article.html
         path: build/article.html
 
+    - name: Release with built documents
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/article.docx
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
     
       
