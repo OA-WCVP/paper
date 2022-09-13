@@ -77,8 +77,14 @@ jobs:
     - name: Release with built documents
       uses: softprops/action-gh-release@v1
       with:
-        files: build/article.docx build/article.pdf
+        files: build/article.pdf
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
     
+    - name: Release with built documents
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/article.docx
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
       
