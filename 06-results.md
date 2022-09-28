@@ -16,13 +16,26 @@
 
 ### Open access
 
-![Open access trend](oatrend.png)
+![Open access trend](ipni-oatrend.png)
 
-![Open access trend (pc)](oatrendpc.png)
+![Open access trend (pc)](ipni-oatrendpc.png)
 
 ### Open access status
 
-![Open access status trend](oastatustrend.png)
+![Open access status trend](ipni-oastatustrend.png)
 
-![Open access status trend (pc)](oastatustrendpc.png)
+![Open access status trend (pc)](ipni-oastatustrendpc.png)
 
+## Comparators
+
+### Phytotaxa
+
+![Open access trend](phytotaxa-oatrend.png)
+
+![Open access status trend](phytotaxa-oastatustrend.png)
+
+### GBIF literature
+
+![Open access trend](gbiflit-oatrend.png)
+
+![Open access status trend](gbiflit-oastatustrend.png)
