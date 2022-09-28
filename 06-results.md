@@ -42,3 +42,5 @@
 ![Open access trend](gbiflit-oatrend.png)
 
 ![Open access status trend](gbiflit-oastatustrend.png)
+
+
