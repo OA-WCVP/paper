@@ -1,46 +1,32 @@
 # Materials and methods
 
+All data access, analysis, result visualisation and document compilation outlined here was automated using a toolkit based on *Python* scripts using *pandas* and *geopandas* for data management and *matplotlib* for charting. Execution and dependencies were managed by the build tool *make*, whch generated an archivable output which was attached to each analytical repository. *Github actions* were used to download analysis results and to compile the article document using *pandoc* and *latex*. 
+
 ## Data sources
 
-### World Checklist of Vascular Plants (WCVP)
+**World Checklist of Vascular Plants** (WCVP, https://wcvp.science.kew.org/) is a globally comprehensive taxonomy for vascular plants indicating taxonomic acceptance and details of synonymy, along with native and introduced distributions for accepted species using level 3 (region) of the hierarchical Biodiversity Information Standards (TDWG) data standard World Geographical Scheme for Recording Plant Distributions (WGSRPD). It is editorially coordinated by the Royal Botanic Gardens, Kew, with a global network of expert contributors and reviewers. 
 
-The World Checklist of Vascular Plants is a globally comprehensive taxonomy for vascular plants indicating taxonomic acceptance and details of synonymy, along with native and introduced distributions for accepted species using level 3 (region) of the hierarchical Biodiversity Information Standards (TDWG) data standard World Geographical Scheme for Recording Plant Distributions (WGSRPD). It is editorially coordinated by Rafael Govaerts at Royal Botanic Gardens, Kew, with a global network of expert contributors and reviewers. 
-
-### International Plant Names Index (IPNI)
- 
-The International Plant Names Index (IPNI) is an editorially-managed nomenclatural database containing the name and basic bibliographic details about the first publication of the names of vascular plants (Tracheophyta) as governed by the International Code of Nomenclature for algae, fungi and plants (ICNafp). The project started compiling data in the 1880s as *Index Kewensis*, with an editorial team based at the Royal Botanic Gardens, Kew, funded by a legacy from Charles Darwin. The base data recorded for a single nomenclatural event has expanded over the years at the following points:
+**International Plant Names Index** (IPNI, https://www.ipni.org) is an editorially-managed nomenclatural database containing the name and basic bibliographic details about the first publication of the names of vascular plants (Tracheophyta) as governed by the International Code of Nomenclature for algae, fungi and plants (ICNafp). The project started compiling data in the 1880s as *Index Kewensis*, with an editorial team based at the Royal Botanic Gardens, Kew, funded by a legacy from Charles Darwin. The base data recorded for a single nomenclatural event has expanded over the years at the following points:
 
 - **1997** - Type citation data from the protologue added for taxonomic novelties at rank of species or below
 - **2012** - Information about the electronic publishing of nomenclatural acts added - the Digital Object Identifier (DOI) of the containing article, a flag to indicate if the containing article was published electronically and a flag to indicate if the description or diagnosis was written in English (prior to 2012 Latin was the only permissible language for description or diagnosis).
 
-IPNI data are available online at https://www.ipni.org and via a programmatic API (pykew).
+IPNI data are available online via a user facing website and also via a programmatic API (pykew).
 
-### Global Biodiversity Information Facility (GBIF)
+**Global Biodiversity Information Facility** (GBIF, https://www.gbif.org) is an intergovernmental organisation created in response to OECD megascience forum [@noauthor_final_1999]. It has a secretariat based in Copenhagen, Denmark and runs a portal which provides access to data through a user-facing website and an API (https://www.gbif.org/developer/summary). Many of the products of the digitisation efforts from the world's herbarium collections are mobilised through GBIF as *occurrences*, with basis of record set to *preserved_specimen*, often including a specimen image (TODO: add numbers of vascular plant specimens, and percentage which claim availability of media type = still image). GBIF produce a synthetic "backbone taxonomy" which is used to organise aggregated content. This backbone taxonomy is also available as a downloadable resource. Since 2016, GBIF have labelled downloads with Digital Object Identifiers (DOIs). Usage of these is tracked when the DOI is cited in the references section of a published work. This technical and literature monitoring work has been accompanied by a [#CiteTheDOI campaign](https://twitter.com/GBIF/status/1427590252219322394) on social media, to raise awareness of the practice amongst authors, editors and reviewers. The bibliographic details of these citing articles are used to populate a literature resource (https://www.gbif.org/resource/search?contentType=literature). Metadata describing the membership of the GBIF network and the technical details of the publishing organisations, their locations and endorsement by national or regional networks is available in a registry, this metadata is also accessible both through a user-facing website and via a programmatic API. 
 
-The Global Biodiversity Information Facility (GBIF, https://www.gbif.org) is an intergovernmental organisation created in response to OECD megascience forum [@noauthor_final_1999]. It has a secretariat based in Copenhagen, Denmark and runs a portal which provides access to data through a user-facing website and an API (https://www.gbif.org/developer/summary). Many of the products of the digitisation efforts from the world's herbarium collections are mobilised through GBIF as *occurrences*, with basis of record set to *preserved_specimen*, often including a specimen image (TODO: add numbers of vascular plant specimens, and percentage which claim availability of media type = still image). Since 2016, GBIF have labelled downloads with DOIs, usage of these is tracked when the DOI is cited in the references section of a published work. This technical and literature monitoring work has been accompanied by a [#CiteTheDOI campaign](https://twitter.com/GBIF/status/1427590252219322394) on social media, to raise awareness of the practice amongst authors and reviewers. The bibliographic details of these citing articles are used to populate a literature resource (https://www.gbif.org/resource/search?contentType=literature). Metadata describing the membership of the GBIF network and the technical details of the publishing organisations, their locations and endorsement by national or regional networks is available in a registry, this metadata is also accessible both through a user-facing website and via a programmatic API. 
+**Index Herbariorum** (IH, http://sweetgum.nybg.org/science/ih/) TODO populate
 
-### Index Herbariorum
-TODO populate
+**Crossref** (https://www.crossref.org) is an official DOI registration agency run by the Publishers International Linking Association providing deposit and query services for DOIs. Members assign DOIs to their own content and where possible use DOIs to link out from the references sections of the materials that they publish.
 
-### Crossref
-
-Crossref (https://www.crossref.org) is an official DOI registration agency run by the Publishers International Linking Association providing deposit and query services for DOIs. Members assign DOIs to their own content and where possible use DOIs to link out from the references sections of the materials that they publish.
-
-### Directory of Open Access Journals (DOAJ)
+**Directory of Open Access Journals (DOAJ)**
 
 
-### Unpaywall
+**Unpaywall** (https://unpaywall.org/) is an open database of scholarly articles organised by DOI. It offers a flag to indicate if the content is available open access, a link to the content (if available) and a further categorisation to indicate what kind of open access model is used. 
 
-Unpaywall is an "open database of 32.7 million free scholarly articles" (https://unpaywall.org/). 
-Ref "The State of OA: A large-scale analysis of the prevalence and impact of Open Access articles"
+## Analyses 
 
-## Data integration
-WCVP was used to give a globally comprehensive taxonomy with distribution. as each scientific name in WCVP is accompanied by an identifier for the scientific name in IPNI, two classes of additional data are added: 
-
-1. Type citation data (for the data published since 1997).
-1. Digital object identifiers (DOIs) for the containing article (for data published since 2012). 
-
-## Analyses
+We conducted the following analyses using the datasets as decribed above. 
 
 ### Availability of specimens
 
