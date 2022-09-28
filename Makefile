@@ -82,6 +82,7 @@ article_parts=00-preamble.yaml \
 			09-author_contribution.md \
 			10-data_availability_statement.md \
 			11-conflict_of_interest_statement.md \
+			11a-appendix.md \
 			12-references.md 
 
 build/article.md: $(article_parts)
