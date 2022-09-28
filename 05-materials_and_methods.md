@@ -4,7 +4,7 @@
 
 ### World Checklist of Vascular Plants (WCVP)
 
-The World Checklist of Vascular Plants is a globally comprehensive taxonomy for vascular plants indicating taxonomic acceptance and details of synonymy, along with native and introduced distributions for accepted species using level 3 (region) of the hierarchical Biodiversity Information Standards (TDWG) data standard World Geographical Scheme for Recording Plant Distributions (WGSRPD). It is editorially coordinated by Rafael Govaerts at Royal Botanic Gardens, Kew, with a global network of expert contributors and reviewers. The WCVP data (taxonomy and distribution) used in this study were made available as structured datafiles, through written agreement with RBG Kew.
+The World Checklist of Vascular Plants is a globally comprehensive taxonomy for vascular plants indicating taxonomic acceptance and details of synonymy, along with native and introduced distributions for accepted species using level 3 (region) of the hierarchical Biodiversity Information Standards (TDWG) data standard World Geographical Scheme for Recording Plant Distributions (WGSRPD). It is editorially coordinated by Rafael Govaerts at Royal Botanic Gardens, Kew, with a global network of expert contributors and reviewers. 
 
 ### International Plant Names Index (IPNI)
  
@@ -13,12 +13,11 @@ The International Plant Names Index (IPNI) is an editorially-managed nomenclatur
 - **1997** - Type citation data from the protologue added for taxonomic novelties at rank of species or below
 - **2012** - Information about the electronic publishing of nomenclatural acts added - the Digital Object Identifier (DOI) of the containing article, a flag to indicate if the containing article was published electronically and a flag to indicate if the description or diagnosis was written in English (prior to 2012 Latin was the only permissible language for description or diagnosis).
 
-IPNI data are available online at https://www.ipni.org and via a programmatic API (pykew), this study used programmatic access to the data using the pykew package.
+IPNI data are available online at https://www.ipni.org and via a programmatic API (pykew).
 
 ### Global Biodiversity Information Facility (GBIF)
 
-The Global Biodiversity Information Facility (GBIF) is an intergovernmental organisation created in response to OECD megascience forum. It has a secretariat based in Copenhagen, Denmark and runs a portal which provides access to data through a user-facing website (https://www.gbif.org) and an API (https://www.gbif.org/developer/summary). Many of the products of the digitisation efforts from the world's herbarium collections are mobilised through GBIF as *occurrences*, with basis of record set to *preserved_specimen*, often including a specimen image (TODO: add numbers of vascular plant specimens, and percentage which claim availability of media type = still image). Since ????, both routes to the data are able to create DOI-labelled data downloads, and usage of these is tracked when the DOI is cited in the references section of a published work. The bibliographic details of these citing articles are used to populate a literature resource (https://www.gbif.org/resource/search?contentType=literature). Metadata describing the membership of the GBIF network and the technical details of the publishing organisations, their locations and endorsement by national or regional networks is available in a registry, this metadata is also accessible both through a user-facing website and via a programmatic API.
-The GBIF-mediated data used in this study was accessed using the GBIF API.
+The Global Biodiversity Information Facility (GBIF, https://www.gbif.org) is an intergovernmental organisation created in response to OECD megascience forum [@noauthor_final_1999]. It has a secretariat based in Copenhagen, Denmark and runs a portal which provides access to data through a user-facing website and an API (https://www.gbif.org/developer/summary). Many of the products of the digitisation efforts from the world's herbarium collections are mobilised through GBIF as *occurrences*, with basis of record set to *preserved_specimen*, often including a specimen image (TODO: add numbers of vascular plant specimens, and percentage which claim availability of media type = still image). Since 2016, GBIF have labelled downloads with DOIs, usage of these is tracked when the DOI is cited in the references section of a published work. This technical and literature monitoring work has been accompanied by a [#CiteTheDOI campaign](https://twitter.com/GBIF/status/1427590252219322394) on social media, to raise awareness of the practice amongst authors and reviewers. The bibliographic details of these citing articles are used to populate a literature resource (https://www.gbif.org/resource/search?contentType=literature). Metadata describing the membership of the GBIF network and the technical details of the publishing organisations, their locations and endorsement by national or regional networks is available in a registry, this metadata is also accessible both through a user-facing website and via a programmatic API. 
 
 ### Index Herbariorum
 TODO populate
@@ -26,6 +25,9 @@ TODO populate
 ### Crossref
 
 Crossref (https://www.crossref.org) is an official DOI registration agency run by the Publishers International Linking Association providing deposit and query services for DOIs. Members assign DOIs to their own content and where possible use DOIs to link out from the references sections of the materials that they publish.
+
+### Directory of Open Access Journals (DOAJ)
+
 
 ### Unpaywall
 
