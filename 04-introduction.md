@@ -7,7 +7,7 @@ Naming is an essential service, enabling us to interact with existing bodies of 
 
 ### Taxonomic impediment
 
-Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards completion is challenged by the "taxonomic impediment". First introduced in ???? this term has become a shorthand for the skills (and resources) gap. Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor.
+Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards completion is challenged by the "taxonomic impediment". First introduced in 1976 this term has become a shorthand for the skills (and resources) gap [taylor1976submission; taylor1983descriptive]. Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor.
 
 ### Global scale  
 (Distribution of species / specimens)
