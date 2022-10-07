@@ -1,13 +1,9 @@
 # Introduction
 
 ### Aim
-Comprehensive species description, to combat the biodiversity crisis
+The aim of this paper is explore patterns of open access publication of new species.  Naming of new taxa is an essential service, enabling us to interact with existing bodies of knowledge - as Linneaus warned us: *nomina si nescis, perit et cognitio rurem* (if you do not know the names, your knowledge gets lost) [@Linnaeus1792]. Accurate naming is also essential to develop our understanding of newly described organisms. We cannot protect what we have not named:  legislative protection of species cannot proceed without a formal species description. 
 
-Naming is an essential service, enabling us to interact with existing bodies of knowledge - as Linneaus warned us: *nomina si nescis, perit et cognitio rurem* (if you do not know the names, your knowledge gets lost) [@Linnaeus1792]. Accurate naming is also essential to develop our understanding of new discoveries. We cannot protect what we have not named:  legislative protection of species cannot proceed without a formal species description.
-
-### Taxonomic impediment
-
-Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards completion is challenged by the "taxonomic impediment". First introduced in 1976 this term has become a shorthand for the skills (and resources) gap [@taylor1976submission; @taylor1983descriptive]. Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor.
+Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards documenting and understanding plant diversity is challenged by the "taxonomic impediment". First introduced in 1976 this term has become a shorthand for the skills (and resources) gap [@taylor1976submission; @taylor1983descriptive]. Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor (Mayr et al. 2016; Paton et al. 2020).  It is important to build capacity  in species rich areas to properly document plant diversity and focus conservation action (Cheek 2020).  Around 2000 new species are described each year, many new species are described have narrow distributions and are likely to be threatened (Niclughadha et al. 2020) 
 
 ### Global scale  
 (Distribution of species / specimens)
