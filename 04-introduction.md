@@ -30,6 +30,8 @@ Researchers in plant diversity and distribution recognise "hotspots" - places wh
 - Hopes for open access  
 - Types of open access (define green, gold, hybrid, bronze, diamond etc)
 
+A foundational event of the Open Access movement was the Budapest Open Access Initiative (BOAI)[@Chan2002]. It was recognised in the initiative that scholarly publications were an important and public good, that, with the advent of the internet, could be shared completely freely to all those who wanted to read it, whether out of need or curiosity. By removing barriers to scientific literature it was hoped that open access would “*... accelerate research, enrich education, share the learning of the rich with the poor and the poor with the rich, make this literature as useful as it can be, and lay the foundation for uniting humanity in a common intellectual conversation and quest for knowledge*” [@Chan2002]. The Initiative recommended two complementary strategies to achieve these goals, firstly self-archiving in open repositories (so called green open access) and publication in completely open access journals (so called gold open access), usually associated with an article processing charge to the author. Subsequently other shades of open access publication have emerged. Hybrid open access required an article processing charge to publish openly in an otherwise closed journal. Bronze open access is a journal that is freely available to read, but does not have an open access license. Finally, diamond open access where the publication is openly licensed, but neither the author nor the reader pays charges.
+
 ### Publishing overview - taxonomic  
 - Role of code  
 - Recent changes, future directions  
