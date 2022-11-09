@@ -16,6 +16,7 @@ jobs:
       run: |
         pip3 install --user --upgrade setuptools
         pip3 install --user gh2md
+        export GITHUB_ACCESS_TOKEN=${{ secrets.PAT }}
         $HOME/.local/bin/gh2md OA-WCVP/paper issues.md
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
