@@ -1,24 +1,24 @@
-name: Export issues
+name: Export issues to markdown
 on:
+  # push: # comment it to reduce update.
   schedule:
-    # run every 8 hours
-    #- cron:  '0 0,8,16 * * *'
-    # run at 9:45 am
-    - cron:  '45 9 * * *'
+    # every day at 10am 
+    - cron:  '00 10 * * *'
 jobs:
-  deploy:
-    name: Export issues
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Export issues
-      uses: niteoweb/export-issues-action@v2
+    - uses: actions/checkout@master
       with:
-        repo: ${{ github.repository }}
-        org: ${{ github.repository_owner }}
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        out: issues
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Backup github issues to a markdown file.
+      run: |
+        pip3 install --user --upgrade setuptools
+        pip3 install --user gh2md
+        $HOME/.local/bin/gh2md $GITHUB_REPOSITORY issues.md --token ${{ secrets.GITHUB_TOKEN }}
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
         name: issues
-        path: "issues/*.md"
+        path: "issues.md"
