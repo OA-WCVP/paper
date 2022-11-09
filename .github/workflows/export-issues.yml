@@ -4,7 +4,7 @@ on:
     # run every 8 hours
     #- cron:  '0 0,8,16 * * *'
     # run at 9:45 am
-    - cron:  '0 9 45 * *'
+    - cron:  '45 9 * * *'
 jobs:
   deploy:
     name: Export issues
