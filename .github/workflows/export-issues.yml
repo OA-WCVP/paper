@@ -1,9 +1,9 @@
 name: Export issues to markdown
 on:
-  # push: # comment it to reduce update.
+  push: # comment it to reduce update.
   schedule:
     # every day at 10am 
-    - cron:  '00 10 * * *'
+    # - cron:  '00 10 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
