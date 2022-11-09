@@ -36,7 +36,7 @@ Authors (and their affiliations) are defined in YAML in the preamble document fr
 
 #### Automated compilation
 
-A github action compiles the output document when a tag is applied to the repository. The PDF version of the article is made available as a build artifact.
+A github action compiles the output document when a tag is applied to the repository. PDF and Word (.docx) versions of the article are made available as build artifacts.
 
 #### Local document compilation
 
