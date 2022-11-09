@@ -16,7 +16,7 @@ jobs:
       run: |
         pip3 install --user --upgrade setuptools
         pip3 install --user gh2md
-        $HOME/.local/bin/gh2md $GITHUB_REPOSITORY issues.md --token ${{ secrets.GITHUB_TOKEN }}
+        $HOME/.local/bin/gh2md $GITHUB_REPOSITORY issues.md
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
