@@ -111,8 +111,8 @@ build/%.png: data/%.png
 	mkdir -p build
 	cp $^ $@
 
-ipni_oatrends_charts:=build/ipni-oatrend.png build/ipni-oastatustrend.png
-ipni_oatrends_pc_charts:=build/ipni-oatrendpc.png build/ipni-oastatustrendpc.png
+ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oatrend-publ.png build/ipni-oatrend-fam-pro.png build/ipni-oatrend-fam-hort.png build/ipni-oastatustrend.png
+ipni_oatrends_pc_charts:=build/ipni-oatrendpc-year.png build/ipni-oatrendpc-publ.png build/ipni-oatrendpc-fam-pro.png build/ipni-oatrendpc-fam-hort.png build/ipni-oastatustrendpc.png
 dist1_charts:=build/ipni-oatrend-dist-1.png build/ipni-oatrend-dist-1-taxnov.png
 dist1_pc_charts:=build/ipni-oatrend-dist-1-pc.png build/ipni-oatrend-dist-1-taxnov-pc.png
 dist2_charts:=build/ipni-oatrend-dist-2.png build/ipni-oatrend-dist-2-taxnov.png
