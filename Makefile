@@ -111,6 +111,7 @@ build/%.png: data/%.png
 	mkdir -p build
 	cp $^ $@
 
+ipni_publ_type_charts:=build/ipni-publtype.png
 ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oatrend-publ.png build/ipni-oatrend-fam-pro.png build/ipni-oatrend-fam-hort.png build/ipni-oastatustrend.png
 ipni_oatrends_pc_charts:=build/ipni-oatrendpc-year.png build/ipni-oatrendpc-publ.png build/ipni-oatrendpc-fam-pro.png build/ipni-oatrendpc-fam-hort.png build/ipni-oastatustrendpc.png
 dist1_charts:=build/ipni-oatrend-dist-1.png build/ipni-oatrend-dist-1-taxnov.png
@@ -123,7 +124,7 @@ dist3_pc_charts:=build/ipni-oatrend-dist-3-pc.png build/ipni-oatrend-dist-3-taxn
 phytotaxa_oatrends_charts:=build/phytotaxa-oatrend.png build/phytotaxa-oastatustrend.png
 gbiflit_oatrends_charts:=build/gbiflit-oatrend.png build/gbiflit-oastatustrend.png
 
-charts=build/catalognumbertrend.png $(ipni_oatrends_charts) $(ipni_oatrends_pc_charts) $(dist1_charts) $(dist1_pc_charts) $(dist2_charts) $(dist2_pc_charts) $(dist3_charts) $(dist3_pc_charts) $(phytotaxa_oatrends_charts) $(gbiflit_oatrends_charts)
+charts=build/catalognumbertrend.png $(ipni_publ_type_charts) $(ipni_oatrends_charts) $(ipni_oatrends_pc_charts) $(dist1_charts) $(dist1_pc_charts) $(dist2_charts) $(dist2_pc_charts) $(dist3_charts) $(dist3_pc_charts) $(phytotaxa_oatrends_charts) $(gbiflit_oatrends_charts)
 
 allcharts: $(charts)
 
