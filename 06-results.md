@@ -39,7 +39,7 @@ Comparing professional interest families with those which have considerable hort
 
 ![Open access trend - family in Fabaceae, Poaceae, Solanacae,](ipni-oatrend-fam-pro.png)
 
-![Open access trend - family in Bromeliaceae, Cactaceae, Orchidaceae](ipni-oatrend-fam-pro.png)
+![Open access trend - family in Bromeliaceae, Cactaceae, Orchidaceae](ipni-oatrend-fam-hort.png)
 
 ## Comparators
 
