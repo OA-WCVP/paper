@@ -41,6 +41,10 @@ data/ipni-oa%.png: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
+data/ipni-publtype.png: downloads/ipni-oa-data.zip
+	mkdir -p data
+	unzip -o $^ $@
+
 data/phytotaxa-oa%.png: downloads/phytotaxa-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
