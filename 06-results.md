@@ -17,6 +17,10 @@
 
 ## Availability of literature
 
+### Where published
+
+![Publication in serial or book form](ipni-publtype.png)
+
 ### Temporal trends
 #### Open access
 
