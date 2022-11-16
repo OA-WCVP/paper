@@ -15,41 +15,17 @@ python_launch_cmd=winpty python
 # These targets must authenticate to github nd therefore need an access_token 
 # which must be stored in an environment variable named "GITHUB_TOKEN"
 
-archived_analyses: downloads/ipni-oa-data.zip downloads/phytotaxa-oa-data.zip downloads/gbif-literature-data.zip downloads/catalog-number-access-data.zip
+archived_analyses: downloads/ipni-oa-data.zip 
 
 downloads/%-data.zip: util/download-artifact.py
 	mkdir -p downloads
 	$(python_launch_cmd) util/download-artifact.py $*
-
-data/catalognumbertrend.png: downloads/catalog-number-access-data.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/linktrend.png: downloads/catalog-number-access-data.zip
-	mkdir -p data
-	unzip -o $^ $@
 
 downloads/ipni-oa-analysis.zip:
 	mkdir -p downloads
 	wget -O $@ $(archived_analysis_url_ipni_oa)
 
 data/ipni-oa%.png: downloads/ipni-oa-data.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/ipni-oa%.png: downloads/ipni-oa-data.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/ipni-publtype.png: downloads/ipni-oa-data.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/phytotaxa-oa%.png: downloads/phytotaxa-oa-data.zip
-	mkdir -p data
-	unzip -o $^ $@
-
-data/gbiflit-oa%.png: downloads/gbif-literature-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -115,20 +91,11 @@ build/%.png: data/%.png
 	mkdir -p build
 	cp $^ $@
 
-ipni_publ_type_charts:=build/ipni-publtype.png
-ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oatrend-publ.png build/ipni-oatrend-fam-pro.png build/ipni-oatrend-fam-hort.png build/ipni-oastatustrend.png
-ipni_oatrends_pc_charts:=build/ipni-oatrendpc-year.png build/ipni-oatrendpc-publ.png build/ipni-oatrendpc-fam-pro.png build/ipni-oatrendpc-fam-hort.png build/ipni-oastatustrendpc.png
-dist1_charts:=build/ipni-oatrend-dist-1.png build/ipni-oatrend-dist-1-taxnov.png
-dist1_pc_charts:=build/ipni-oatrend-dist-1-pc.png build/ipni-oatrend-dist-1-taxnov-pc.png
-dist2_charts:=build/ipni-oatrend-dist-2.png build/ipni-oatrend-dist-2-taxnov.png
-dist2_pc_charts:=build/ipni-oatrend-dist-2-pc.png build/ipni-oatrend-dist-2-taxnov-pc.png
-dist3_charts:=build/ipni-oatrend-dist-3.png build/ipni-oatrend-dist-3-taxnov.png
-dist3_pc_charts:=build/ipni-oatrend-dist-3-pc.png build/ipni-oatrend-dist-3-taxnov-pc.png
+ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
+ipni_publ_charts:=build/ipni-oatrend-publ.png
+# TODO add map as chart here
 
-phytotaxa_oatrends_charts:=build/phytotaxa-oatrend.png build/phytotaxa-oastatustrend.png
-gbiflit_oatrends_charts:=build/gbiflit-oatrend.png build/gbiflit-oastatustrend.png
-
-charts=build/catalognumbertrend.png $(ipni_publ_type_charts) $(ipni_oatrends_charts) $(ipni_oatrends_pc_charts) $(dist1_charts) $(dist1_pc_charts) $(dist2_charts) $(dist2_pc_charts) $(dist3_charts) $(dist3_pc_charts) $(phytotaxa_oatrends_charts) $(gbiflit_oatrends_charts)
+charts=$(ipni_oatrends_charts) $(ipni_publ_charts) # TODO add map chart here
 
 allcharts: $(charts)
 

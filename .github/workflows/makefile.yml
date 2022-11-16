@@ -24,38 +24,6 @@ jobs:
         target: 'downloads/ipni-oa-data.zip'
         token: ${{ secrets.PAT }}
 
-    - uses: dsaltares/fetch-gh-release-asset@master
-      with:
-        repo: 'OA-WCVP/catalog-number-access'
-        version: 'latest'
-        file: "catalog-number-access-data.zip"
-        target: 'downloads/catalog-number-access-data.zip'
-        token: ${{ secrets.PAT }}
-
-    - uses: dsaltares/fetch-gh-release-asset@master
-      with:
-        repo: 'OA-WCVP/gbif-literature'
-        version: 'latest'
-        file: "gbif-literature-data.zip"
-        target: 'downloads/gbif-literature-data.zip'
-        token: ${{ secrets.PAT }}
-
-    - uses: dsaltares/fetch-gh-release-asset@master
-      with:
-        repo: 'OA-WCVP/phytotaxa-oa'
-        version: 'latest'
-        file: "phytotaxa-oa-data.zip"
-        target: 'downloads/phytotaxa-oa-data.zip'
-        token: ${{ secrets.PAT }}
-
-    - uses: dsaltares/fetch-gh-release-asset@master
-      with:
-        repo: 'OA-WCVP/wcvp-gbif-processing'
-        version: 'latest'
-        file: "wcvp-gbif-processing-data.zip"
-        target: 'downloads/wcvp-gbif-processing-data.zip'
-        token: ${{ secrets.PAT }}
-        
     - name: Sanity check artifact download
       run: ls -ltra downloads
 

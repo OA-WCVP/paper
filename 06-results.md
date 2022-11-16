@@ -1,62 +1,18 @@
 # Results
 
-## Availability of specimens
-
-### General - "holder claims"
-
-- 69.03% taxa have type material available (257094 of 372430)
-
-- 31.44% taxa (117096 of 372430) are represented by type material served from within their native range in continent_code_l1
-- 19.77% taxa (73612 of 372430) are represented by type material served from within their native range in region_code_l2
-- 11.80% taxa (43954 of 372430) are represented by type material served from within their native range in area_code_l3
-
-### Specific - author cites
-
-![Catalog number trends](catalognumbertrend.png)
+ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
+ipni_publ_charts:=build/ipni-oatrend-publ.png
 
 
-## Availability of literature
+## Use of open access
 
-### Where published
+![Open access status of bibliographic work containing nomenclatural events](ipni-oatrend-year.png)
+![What kinds of open access are used](build/ipni-oastatustrendpc.png)
 
-![Publication in serial or book form](ipni-publtype.png)
+## Journals used
 
-### Temporal trends
-#### Open access
+![Top 30 bibliographic works containing nomenclatural events and their use of open access](ipni-oatrend-publ.png)
 
-![Open access trend](ipni-oatrend-year.png)
+## Geographical analysis
 
-![Open access trend (pc)](ipni-oatrendpc-year.png)
-
-#### Open access status
-
-![Open access status trend](ipni-oastatustrend.png)
-
-![Open access status trend (pc)](ipni-oastatustrendpc.png)
-
-### By publication
-![Open access trend in top 30 publications](ipni-oatrend-publ.png)
-
-
-### By family
-Comparing professional interest families with those which have considerable horticultural interest
-
-![Open access trend - family in Fabaceae, Poaceae, Solanacae,](ipni-oatrend-fam-pro.png)
-
-![Open access trend - family in Bromeliaceae, Cactaceae, Orchidaceae](ipni-oatrend-fam-hort.png)
-
-## Comparators
-
-### Phytotaxa
-
-![Open access trend](phytotaxa-oatrend.png)
-
-![Open access status trend](phytotaxa-oastatustrend.png)
-
-### GBIF literature
-
-![Open access trend](gbiflit-oatrend.png)
-
-![Open access status trend](gbiflit-oastatustrend.png)
-
-
+(todo)
