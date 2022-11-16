@@ -1,9 +1,5 @@
 # Results
 
-ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
-ipni_publ_charts:=build/ipni-oatrend-publ.png
-
-
 ## Use of open access
 
 ![Open access status of bibliographic work containing nomenclatural events](ipni-oatrend-year.png)
