@@ -97,9 +97,10 @@ build/%.png: data/%.png
 
 ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
 ipni_publ_charts:=build/ipni-oatrend-publ.png
-ipni_wcvp_map_charts:=build/oaratio-wcvp-map-level-1.png build/oaratio-wcvp-map-level-2.png build/oaratio-wcvp-map-level-3.png findability-wcvp-map-level-1.png findability-wcvp-map-level-2.png findability-wcvp-map-level-3.png
+ipni_wcvp_map_charts_oaratio:=build/oaratio-wcvp-map-level-1.png build/oaratio-wcvp-map-level-2.png build/oaratio-wcvp-map-level-3.png 
+ipni_wcvp_map_charts_findability:=build/findability-wcvp-map-level-1.png build/findability-wcvp-map-level-2.png build/findability-wcvp-map-level-3.png
 
-charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts)
+charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts_oaratio) $(ipni_wcvp_map_charts_findability)
 
 allcharts: $(charts)
 
