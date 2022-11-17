@@ -15,17 +15,21 @@ python_launch_cmd=winpty python
 # These targets must authenticate to github nd therefore need an access_token 
 # which must be stored in an environment variable named "GITHUB_TOKEN"
 
-archived_analyses: downloads/ipni-oa-data.zip 
+archived_analyses: downloads/ipni-oa-data.zip downloads/ipni-oa-map-charts-data.zip 
 
 downloads/%-data.zip: util/download-artifact.py
 	mkdir -p downloads
 	$(python_launch_cmd) util/download-artifact.py $*
 
-downloads/ipni-oa-analysis.zip:
-	mkdir -p downloads
-	wget -O $@ $(archived_analysis_url_ipni_oa)
-
 data/ipni-oa%.png: downloads/ipni-oa-data.zip
+	mkdir -p data
+	unzip -o $^ $@
+
+data/findability-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
+	mkdir -p data
+	unzip -o $^ $@
+
+data/oaratio-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -93,9 +97,9 @@ build/%.png: data/%.png
 
 ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
 ipni_publ_charts:=build/ipni-oatrend-publ.png
-# TODO add map as chart here
+ipni_wcvp_map_charts:=build/oaratio-wcvp-map-level-1.png build/oaratio-wcvp-map-level-2.png build/oaratio-wcvp-map-level-3.png findability-wcvp-map-level-1.png findability-wcvp-map-level-2.png findability-wcvp-map-level-3.png
 
-charts=$(ipni_oatrends_charts) $(ipni_publ_charts) # TODO add map chart here
+charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts)
 
 allcharts: $(charts)
 
