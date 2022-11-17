@@ -28,3 +28,4 @@
 ![Findability, TDWG level 3](findability-wcvp-map-level-3.png)
 
 ![OA ratio, TDWG level 3](oaratio-wcvp-map-level-3.png)
+
