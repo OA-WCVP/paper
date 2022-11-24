@@ -26,15 +26,15 @@ All data access, analysis, result visualisation and document compilation outline
 ```{.mermaid caption="Category assignment"}
 graph TD
     Start[fa:fa-user Look at nomenclatural acts] --> HasDOI
-    HasDOI{"Has DOI?"}
-    HasDOI --> |Yes|IsOA{"Is OA?"}
-    HasDOI --> |No| NoDOI[fa:icon-stop <b>Undiscoverable</b>]
+    HasDOI{"Has digital object identifier (DOI)?"}
+    HasDOI --> |Yes|IsOA{"Is open access (OA)?"}
+    HasDOI --> |No| NoDOI[<b>Undiscoverable</b>]
     IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
     IsOA -->|Yes| Open{fa:fa-unlock <b>Open</b><br/>What kind of OA?}
-    Open -->|Gold| Gold[fa:icon-money <b>Author pays</b> article<br/> processing charge,<br/> free to read, all <br/>articles in journal are OA]
-    Open -->|Green| Green[fa:fa-archive <b>Author archives</b><br/> copy in <br/>institutional <br/>repository]
-    Open -->|Bronze| Bronze[fa:icon-question-sign Available on <br/>publisher's site, <br/>not formally <br/>licensed for reuse.]
-    Open -->|Hybrid| Hybrid[fa:icon-money <b>Author pays</b> article<br/> processing charge to make <br/>article open, journal includes <br/>a mix of OA and closed <br/>articles and charges subscription fees]
+    Open -->|Gold| Gold[<b>Author pays</b> article<br/> processing charge,<br/> free to read, all <br/>articles in journal are OA]
+    Open -->|Green| Green[<b>Author archives</b><br/> copy in <br/>institutional <br/>repository]
+    Open -->|Bronze| Bronze[Available on <br/>publisher's site, <br/>not formally <br/>licensed for reuse.]
+    Open -->|Hybrid| Hybrid[<b>Author pays</b> article<br/> processing charge to make <br/>article open, journal includes <br/>a mix of OA and closed <br/>articles and charges subscription fees]
     Open -->|Diamond| Diamond[Free to <br/>publish and read]
     
     classDef Gold fill:#fde769;
