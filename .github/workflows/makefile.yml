@@ -55,6 +55,9 @@ jobs:
     - name: Check pandoc version
       run: pandoc -v
 
+    - name: Install pandoc mermaid filter
+      run: npm install --global mermaid-filter
+
     - name: Build all formats (PDF, docx and HTML)
       run: make all
       

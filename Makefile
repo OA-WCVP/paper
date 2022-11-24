@@ -167,6 +167,7 @@ build/article.html: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 	pandoc 	\
 			--lua-filter=pandoc-filters/scholarly-metadata.lua \
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
+			-F mermaid-filter \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
 			--bibliography references.bib \
@@ -186,6 +187,7 @@ build/article.docx: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 	pandoc 	\
 			--lua-filter=pandoc-filters/scholarly-metadata.lua \
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
+			-F mermaid-filter \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
 			--bibliography references.bib \
@@ -204,6 +206,7 @@ build/article.pdf: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-i
 	mkdir -p build
 	pandoc 	--lua-filter=pandoc-filters/scholarly-metadata.lua \
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
+			-F mermaid-filter \
 			--variable=date:"$(date_formatted)" \
 			--pdf-engine=lualatex \
 			--citeproc \
