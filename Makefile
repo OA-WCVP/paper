@@ -33,6 +33,14 @@ data/oaratio-wcvp%.png: downloads/ipni-oa-map-charts-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
+data/taxa2gbif%.md: downloads/wcvp-gbif-processing-data.zip 
+	mkdir -p data
+	unzip -o $^ $@
+
+data/taxa2nativerange%.md: downloads/wcvp-gbif-processing-data.zip 
+	mkdir -p data
+	unzip -o $^ $@
+
 ###############################################################################
 # End of archived analytical runs section
 ###############################################################################
@@ -62,6 +70,22 @@ pandoc-filters/author-info-blocks.lua:
 # End of pandoc filter section
 ###############################################################################
 
+data/type-availability-header-all.md:
+	mkdir -p data
+	echo -e "### Type availability\n\n#### All\n" > $@
+
+data/type-availability-header-cbd.md:
+	mkdir -p data
+	echo -e "#### Convention on biological diversity (post 1992)\n" > $@
+
+data/type-availability-header-nagoya.md:
+	mkdir -p data
+	echo -e "#### Nagoya (post 2014)\n" > $@
+
+data/section-separator.md:
+	mkdir -p data
+	echo -e "\n--\n" > $@
+
 ###############################################################################
 # Concatenate all source markdown files to a single output
 ###############################################################################
@@ -73,7 +97,26 @@ article_parts=00-preamble.yaml \
 			04-introduction.md \
 			05-materials_and_methods.md \
 			06-results.md \
+			data/type-availability-header-all.md \
+			data/section-separator.md \
+			data/taxa2gbiftypeavailability.md \
+			data/section-separator.md \
+			data/taxa2nativerangetypeavailability.md \
+			data/section-separator.md \
+			data/type-availability-header-cbd.md \
+			data/section-separator.md \
+			data/taxa2gbiftypeavailability-cbd.md \
+			data/section-separator.md \
+			data/taxa2nativerangetypeavailability-cbd.md \
+			data/section-separator.md \
+			data/type-availability-header-nagoya.md \
+			data/section-separator.md \
+			data/taxa2gbiftypeavailability-nagoya.md \
+			data/section-separator.md \
+			data/taxa2nativerangetypeavailability-nagoya.md \
+			data/section-separator.md \
 			07-discussion.md \
+			data/section-separator.md \
 			08-acknowledgements.md \
 			09-author_contribution.md \
 			10-data_availability_statement.md \
@@ -83,7 +126,7 @@ article_parts=00-preamble.yaml \
 
 build/article.md: $(article_parts)
 	mkdir -p build
-	cat $^ > $@
+	cat $(article_parts) > $@
 ###############################################################################
 # End of concatenation section
 ###############################################################################
@@ -92,6 +135,10 @@ build/article.md: $(article_parts)
 # Copy charts to build directory
 ###############################################################################
 build/%.png: data/%.png
+	mkdir -p build
+	cp $^ $@
+
+build/%.md: data/%.md
 	mkdir -p build
 	cp $^ $@
 
