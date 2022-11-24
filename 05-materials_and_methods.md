@@ -23,7 +23,7 @@ All data access, analysis, result visualisation and document compilation outline
 
 ### Category assignment
 
-```mermaid{.mermaid caption="Category assignment"}
+```{.mermaid caption="Category assignment"}
 graph TD
     Start[fa:fa-user Look at nomenclatural acts] --> HasDOI
     HasDOI{"Has DOI?"}
