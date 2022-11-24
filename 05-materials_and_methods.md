@@ -28,14 +28,14 @@ graph TD
     Start[fa:fa-user Look at nomenclatural acts] --> HasDOI
     HasDOI{"Has DOI?"}
     HasDOI --> |Yes|IsOA{"Is OA?"}
-    HasDOI --> |No|fa:fa-stop-circle-o NoDOI[<b>Undiscoverable</b>]
-    IsOA -->|No|fa:fa-lock Closed["<b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment"]
-    IsOA -->|Yes|fa:fa-unlock Open{<b>Open</b><br/>What kind of OA?}
-    Open -->|Gold|fa:fa-money Gold["<b>Author pays</b> article<br/> processing charge,<br/> free to read, all <br/>articles in journal are OA"]
-    Open -->|Green|fa:fa-archive Green["<b>Author archives</b><br/> copy in <br/>institutional <br/>repository"]
-    Open -->|Bronze|fa:fa-question-circle-o Bronze["Available on <br/>publisher's site, <br/>not formally <br/>licensed for reuse."]
-    Open -->|Hybrid|fa:fa-money Hybrid["<b>Author pays</b> article<br/> processing charge to make <br/>article open, journal includes <br/>a mix of OA and closed <br/>articles & charges subscription fees"]
-    Open -->|Diamond|fa:fa-diamond Diamond["Free to <br/>publish & read"]
+    HasDOI --> |No| NoDOI[fa:fa-stop-circle-o<b>Undiscoverable</b>]
+    IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
+    IsOA -->|Yes| Open{fa:fa-unlock <b>Open</b><br/>What kind of OA?}
+    Open -->|Gold| Gold[fa:fa-money <b>Author pays</b> article<br/> processing charge,<br/> free to read, all <br/>articles in journal are OA]
+    Open -->|Green| Green[fa:fa-archive <b>Author archives</b><br/> copy in <br/>institutional <br/>repository]
+    Open -->|Bronze| Bronze[fa:fa-question-circle-o Available on <br/>publisher's site, <br/>not formally <br/>licensed for reuse.]
+    Open -->|Hybrid| Hybrid[fa:fa-money <b>Author pays</b> article<br/> processing charge to make <br/>article open, journal includes <br/>a mix of OA and closed <br/>articles and charges subscription fees]
+    Open -->|Diamond| Diamond[fa:fa-diamond Free to <br/>publish and read]
     
     classDef Gold fill:#fde769;
     class Gold Gold;
