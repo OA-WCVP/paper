@@ -23,15 +23,31 @@ All data access, analysis, result visualisation and document compilation outline
 
 ### Category assignment
 
-```{.mermaid caption="Category assignment"}
+```{.mermaid caption="Category assignment - all records"}
 graph TD
     Start[fa:fa-user Look at nomenclatural acts] --> HasDOI
     HasDOI{"Has DOI?"}
     HasDOI --> |Yes|IsOA{"Is OA?"}
-    HasDOI --> |No| Undiscoverable[fa:fa-stop <b>Undiscoverable</b>]
+    HasDOI --> |No| Undiscoverable["fa:fa-stop <b>Undiscoverable</b><br/> May be hard copy only (e.g. a book) <br/>or online without article identifier"]
     IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
     IsOA -->|Yes| Open[fa:fa-unlock <b>Open</b><br/>A version is available <br/>for the reader to access]
-    Open -->|Yes| WhereBest{Where is <br/>best copy of <br/>article located?}
+
+classDef Undiscoverable fill:white;
+    class Undiscoverable Undiscoverable;
+
+classDef Closed fill:#c5c5c5;
+    class Closed Closed;
+
+classDef Open fill:#79be78;
+    class Open Open;
+
+```
+
+```{.mermaid caption="Category assignment - records with DOIs"}
+graph TD
+    WithDoi[Articles with DOIs]-->IsOA{"Is open <br/>access?"}
+    IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
+    IsOA -->|Yes| WhereBest{Where is <br/>best copy of <br/>article located?}
     WhereBest-->|repository| Green[fa:fa-archive <b>Green</b> Author submits preprint <br/>or archives copy<br/> in institutional repository]
     WhereBest-->|publisher| FullyOA{Is the article <br/>published in a<br/> fully-OA journal?}
     FullyOA-->|yes| Gold[fa:fa-dollar <b>Gold</b> Journal funded by <br/>article processing charges <br/>or sponsorship]
