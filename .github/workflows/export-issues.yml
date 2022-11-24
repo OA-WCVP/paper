@@ -1,6 +1,8 @@
 name: Export issues to markdown
 on:
   push: # comment it to reduce update.
+    tags:        
+      - v*.**
   # schedule:
     # every day at 10am 
     # - cron:  '00 10 * * *'
