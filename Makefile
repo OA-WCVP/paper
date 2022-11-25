@@ -72,19 +72,23 @@ pandoc-filters/author-info-blocks.lua:
 
 data/type-availability-header-all.md:
 	mkdir -p data
-	echo -e "### All\n" > $@
+	echo "### All" > $@
+	echo "" >> $@
 
 data/type-availability-header-cbd.md:
 	mkdir -p data
-	echo -e "### Convention on biological diversity (post 1992)\n" > $@
+	echo "### Convention on biological diversity (post 1992)" > $@
+	echo "" >> $@
 
 data/type-availability-header-nagoya.md:
 	mkdir -p data
-	echo -e "### Nagoya (post 2014)\n" > $@
+	echo "### Nagoya (post 2014)" > $@
+	echo "" >> $@
 
 data/section-separator.md:
 	mkdir -p data
-	echo -e "\n--\n" > $@
+	echo " " > $@
+	echo "" >> $@
 
 ###############################################################################
 # Concatenate all source markdown files to a single output
