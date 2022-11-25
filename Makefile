@@ -72,15 +72,15 @@ pandoc-filters/author-info-blocks.lua:
 
 data/type-availability-header-all.md:
 	mkdir -p data
-	echo -e "### Type availability\n\n#### All\n" > $@
+	echo -e "### All\n" > $@
 
 data/type-availability-header-cbd.md:
 	mkdir -p data
-	echo -e "#### Convention on biological diversity (post 1992)\n" > $@
+	echo -e "### Convention on biological diversity (post 1992)\n" > $@
 
 data/type-availability-header-nagoya.md:
 	mkdir -p data
-	echo -e "#### Nagoya (post 2014)\n" > $@
+	echo -e "### Nagoya (post 2014)\n" > $@
 
 data/section-separator.md:
 	mkdir -p data
