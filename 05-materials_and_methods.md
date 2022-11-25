@@ -6,61 +6,66 @@ We attached the World Checklist of Vascular Plants (WCVP, [wcvp.science.kew.org/
 
 To look at the open access availability of digitised type material, we used the Global Biodiversity Information Facility (GBIF, [www.gbif.org](https://www.gbif.org)) to download a dataset of all vascular plant occurrences based on preserved specimens with a type status. We used the GBIF registry to determine the spatial coordinates of the data provider for each record. We integrated the GBIF backbone taxonomy [@registry-migrationgbiforg_gbif_2021] (used to organise the occurrence records) with WCVP to allow us to determine if the type specimen occurrence was mobilised to GBIF from within its native range. To make this assessment we executed a spatial join between the point location of the data provider, and the WGSRPD polgyons comprising the native range of the taxon. We conducted this analysis for the whole dataset, and for two time periods - post the Convention on Biological Diversity (1992-2021) and post Nagoya protocol (2014-2021). For the two temporally defined analyses, we only examined taxa which were first published in that date range.
 
-```{.mermaid caption="Category assignment - all records"}
+```{.mermaid caption="Category assignment"}
 %%{init: {'theme': 'neutral' } }%%
-graph TD
-    Start[fa:fa-user Look at nomenclatural acts] --> HasDOI
-    HasDOI{"Has DOI?"}
-    HasDOI --> |Yes|IsOA{"Is OA?"}
-    HasDOI --> |No| Undiscoverable["fa:fa-stop <b>Undiscoverable</b><br/> May be hard copy only (e.g. a book) <br/>or online without article identifier"]
-    IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
-    IsOA -->|Yes| Open[fa:fa-unlock <b>Open</b><br/>A version is available <br/>for the reader to access]
+flowchart LR
+    subgraph  
+        direction LR
+        subgraph "Category assignment - open access take-up"
+        direction LR  %% <-- here
+                Start_a["Nomenclatural acts (all)"] -------> HasDOI_a
+                HasDOI_a{"Has DOI?"}
+                HasDOI_a -------> |Yes|IsOA_a{"Is OA?"}
+                HasDOI_a -------> |No| Undiscoverable_a["fa:fa-stop <b>Undiscoverable</b><br/> May be hard copy only (e.g. a book) <br/>or online without article identifier"]
+                IsOA_a ------->|No| Closed_a[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
+                IsOA_a ------->|Yes| Open_a[fa:fa-unlock <b>Open</b><br/>A version is available <br/>for the reader to access]
 
-classDef Undiscoverable fill:white;
-    class Undiscoverable Undiscoverable;
+                classDef Undiscoverable fill:white;
+                    class Undiscoverable_a Undiscoverable;
 
-classDef Closed fill:#c5c5c5;
-    class Closed Closed;
+                classDef Closed fill:#c5c5c5;
+                    class Closed_a Closed;
 
-classDef Open fill:#79be78;
-    class Open Open;
+                classDef Open fill:#79be78;
+                    class Open_a Open;
+        end
 
-```
+        subgraph "Category assignment - what kinds of open access used"
+        direction LR  %% <-- here
+                WithDoi["Nomenclatural acts (with DOIs)"]-->IsOA{"&nbsp;<br/>Is article <br/>open access?<br/>&nbsp;"}
+                IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
+                IsOA -->|Yes| WhereBest{Where is <br/>best copy of <br/>article located?}
+                WhereBest-->|repository| Green[fa:fa-archive <b>Green</b> Author submits preprint <br/>or archives copy<br/> in institutional repository]
+                WhereBest-->|publisher| FullyOA{Is the article <br/>published in a<br/> fully-OA journal?}
+                FullyOA-->|yes| Gold[fa:fa-dollar <b>Gold</b> Journal funded by <br/>article processing charges <br/>or sponsorship]
+                FullyOA-->|no| Licence{Is the article <br/>published under an<br/> open license?}
+                Licence-->|yes| Hybrid[fa:fa-dollar <b>Hybrid</b> Author pays for OA<br/>users pay for subscription]
+                Licence-->|no| Bronze[fa:fa-question <b>Bronze</b> Author pays for OA<br/>users pay for subscription<br/>Reuse terms unclear.]
+                
+                classDef Gold fill:#fde769;
+                class Gold Gold;
 
-```{.mermaid caption="Category assignment - records with DOIs"}
-%%{init: {'theme': 'neutral' } }%%
-graph TD
-    WithDoi[Articles with DOIs]-->IsOA{"Is open <br/>access?"}
-    IsOA -->|No| Closed[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
-    IsOA -->|Yes| WhereBest{Where is <br/>best copy of <br/>article located?}
-    WhereBest-->|repository| Green[fa:fa-archive <b>Green</b> Author submits preprint <br/>or archives copy<br/> in institutional repository]
-    WhereBest-->|publisher| FullyOA{Is the article <br/>published in a<br/> fully-OA journal?}
-    FullyOA-->|yes| Gold[fa:fa-dollar <b>Gold</b> Journal funded by <br/>article processing charges <br/>or sponsorship]
-    FullyOA-->|no| Licence{Is the article <br/>published under an<br/> open license?}
-    Licence-->|yes| Hybrid[fa:fa-dollar <b>Hybrid</b> Author pays for OA<br/>users pay for subscription]
-    Licence-->|no| Bronze[fa:fa-question <b>Bronze</b> Author pays for OA<br/>users pay for subscription<br/>Reuse terms unclear.]
-    
-    classDef Gold fill:#fde769;
-    class Gold Gold;
+            classDef Green fill:#79be78;
+                class Green Green;
 
-  classDef Green fill:#79be78;
-    class Green Green;
+            classDef Bronze fill:#d29766;
+                class Bronze Bronze;
+                
+                classDef Hybrid fill:#feb352;
+                class Hybrid Hybrid;
 
-  classDef Bronze fill:#d29766;
-    class Bronze Bronze;
-    
-    classDef Hybrid fill:#feb352;
-    class Hybrid Hybrid;
+            classDef Diamond fill:#e5e4e2;
+                class Diamond Diamond;
 
-classDef Diamond fill:#e5e4e2;
-    class Diamond Diamond;
+            classDef Undiscoverable fill:white;
+                class Undiscoverable Undiscoverable;
 
-classDef Undiscoverable fill:white;
-    class Undiscoverable Undiscoverable;
+            classDef Closed fill:#c5c5c5;
+                class Closed Closed;
 
-classDef Closed fill:#c5c5c5;
-    class Closed Closed;
+            classDef Open fill:#79be78;
+                class Open Open;
 
-classDef Open fill:#79be78;
-    class Open Open;
+        end
+    end
 ```
