@@ -1,55 +1,23 @@
-# Introduction
+Names of plant species are a foundation for further research on the ecology and evolution of plant diversity. Open access to biodiversity information facilitates the downstream use of data for applied purposes such as macroecology (e.g., Cai et al. 2022; Sabatini et al. 2022), conservation, plant breeding and phylogenetics. Naming of new taxa is an essential service, enabling us to interact with existing bodies of knowledge - as Linneaus warned: nomina si nescis, perit et cognitio rurem (if you do not know the names, your knowledge gets lost) (Linnaeus 1751). Accurate naming is also essential to develop our understanding of newly described organisms. We cannot protect what we have not named: legislative protection of species cannot proceed without a formal species description.
 
-### Aim
-The aim of this paper is to explore patterns of open access publication of new plant taxa and to make recommendations to better support the research necessary to document and conserve plant diversity in the most species rich or threatened areas. Naming of new taxa is an essential service, enabling us to interact with existing bodies of knowledge - as Linneaus warned us: *nomina si nescis, perit et cognitio rurem* (if you do not know the names, your knowledge gets lost) [@Linnaeus1792]. Accurate naming is also essential to develop our understanding of newly described organisms. We cannot protect what we have not named: legislative protection of species cannot proceed without a formal species description.
+Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards documenting and understanding plant diversity is challenged by the “taxonomic impediment”. This term was first introduced in 1976 and is a shorthand for the skills (and resources) gap in taxonomy (Taylor 1976, 1983). Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor (Meyer, Weigelt, and Kreft 2016). 
 
-Despite the importance of naming, and the many uses of a comprehensive taxonomic system, progress towards documenting and understanding plant diversity is challenged by the “taxonomic impediment”. This term was first introduced in 1976 and is a shorthand for the skills (and resources) gap in taxonomy [@taylor1976submission; @taylor1983descriptive]. Access to the necessary skills and resources is uneven, and when viewed globally actually mismatches the areas of greatest need: the most species-rich areas are often the most resource-poor [@Meyer2016].
+The naming of algae, fungi and plants is governed by the International Code of Nomenclature for algae fungi and plants (hereafter the Code, Turland et al. 2018), which is revised every six years at the International Botanical Congress following proposals put forward by the botanical community (see Knapp et al. 2004; Lindon et al. 2020). The Code has specific rules for publication of specific nomenclatural acts, unless these rules are followed (see Chapter IV and V of Turland et al. 2018) names are not considered available for use. Nomenclatural acts referring to names of taxa include names of new taxa and  renaming of taxa (such as transfers to different genera or the establishment of a replacement name). Because nomenclatural acts must be published, they should theoretically be widely available for use by both taxonomic and downstream communities.
 
-The adoption of the type method into plant taxonomy means that there is an intimate connection between the names of plants and their type specimens in collections. The distribution of these preserved specimens has been influenced by colonial history, with comprehensive plant collections having been developed in the Global North, whilst the areas richest in species diversity are often located in the tropics [@paton_plant_2020]. Indeed, the enormous wealth of existing collections mean that many as yet un-named taxa already lodged in preserved collections, awaiting examination and description [@bebber2010]. Incresingly digitsation is providing free open access to these specimens [@soltis2017]. However, it is necessary to build human and infrastructural capacity in species rich areas to properly document plant diversity in the most threatened areas and in order to focus conservation action [@fazey2005;@cheek2020]. Although it could be argued that the taxonomic impediment is in part due to the shortage of taxonomists [@engel2021], we believe that open access to information is also a critical aspect as it facilitates the training of researchers, the circumscription of taxa and provides the basis conservation action. Around two thousand vascular plant species are described each year, and most of them are likely to have narrow distributions and to be threatened with extinction [@niclughadha2020].
+Names of taxa are associated with type materials, these are objects (often specimens) to which a name is attached and serve as a reference for future taxonomists. The type method is a relatively recent innovation, prior to 1958 the citation of a type as necessary for the publication of a nomenclatural act as defined above was not necessary (Art. 40, Turland et al. 2018). The adoption of the type method in plant taxonomy means that there is an intimate connection between the names of plants and their type specimens in collections. The distribution of these preserved specimens has been influenced by colonial history, with comprehensive plant collections having been developed in the Global North, with just under 70% of  the almost 400 million herbarium specimens being housed in Europe and North America whilst the areas richest in species diversity are often located in the tropics (Paton et al. 2020; Thiers 2022). Indeed, the enormous wealth of existing collections mean that many as yet unnamed taxa are already lodged in preserved collections, awaiting examination and description (Bebber et al. 2010). 
 
-### Global scale A 
-(Distribution of species / specimens)
+Patterns of colonialism...
 
-Species description is on-going, arising from field activities and from the better understanding of existing resources.
+Increasingly, digitisation...
 
-(Hotspots, where new species are still being collected / described. Example: Ebo?)  not sure we need this paragraph
-Researchers in plant diversity and distribution recognise "hotspots" - places where significant numbers of endemic species are found and from which new species are still being described. 
+Although it could be argued that the taxonomic impediment is in part due to the shortage of taxonomists (Engel et al. 2021), open access to information is also critical as it facilitates the training of researchers, the circumscription and recircumscription of taxa and provides the basis for further downstream analyses. Approximately two thousand vascular plant species are described as new to science each year, and most of them are likely to have narrow distributions and to be threatened with extinction (Nic Lughadha et al. 2020) or have uses not yet undercovered by plant scientists and others. In addition to new taxa, taxonomists work to understand and document relationships of plants, leading to name changes and recircumscriptions of taxa, in turn leading to new names. 
 
-(Collections as place of discovery. Example: Victoria?)
+Electronic publication of nomenclatural acts was, until 2012, not permitted; before that date all nomenclatural acts for algae, fungi and plants had to be published in print on paper. The adoption of electronic publication by the community (at the Melbourne International Botanical Congress, see Nicholson et al. 2017) led to an increase in this method of publication, but did not substantially change to patterns of taxonomic activity. During discussions over electronic publication leading up to and at the Melbourne Congress, there was conflation of electronic publication with Open Access publication (see Knapp et al. 2013; Flann et al. 2014). This conflation led some to suggest that this change in the rules would be a watershed for access to information about the names of organisms, but this was not the case (Nicholson et al. 2017) - publication by electronic means and Open Access are very different things.
 
+Copyright is the right to determine how creative works are used, distributed and displayed and, unless transferred, this right is owned by the creator of the work. Others are not permitted to take these rights without the owner's consent. The Open Access movement provides a means by which copyright holders can simply state that they want their creative work to be open to all, which they do by providing an open licence. Good examples of this are the licences of the Creative Commons organisation.  
 
-- List names published in 2021 with oldest collected type material
+A foundational event of the Open Access movement was the Budapest Open Access Initiative (BOAI)(Chan et al. 2002). It was recognised in the initiative that scholarly publications were an important and public good, that, with the advent of the internet, could be shared completely freely to all those who wanted to read it, whether out of need or curiosity. By removing barriers to scientific literature it was hoped that open access would “… accelerate research, enrich education, share the learning of the rich with the poor and the poor with the rich, make this literature as useful as it can be, and lay the foundation for uniting humanity in a common intellectual conversation and quest for knowledge” (Chan et al. 2002). The Initiative recommended two complementary strategies to achieve these goals, firstly self-archiving in open repositories (so-called green open access) and publication in completely open access journals (so-called gold open access), usually associated with an article processing charge to the author. Subsequently other shades of open access publication have emerged that are detailed in table 1.
 
-### Importance of resources  
-- Type specimens / Literature  
-- Digital access  
-- Population of resources (digital repositories)
+TODO add table
 
-### Publishing overview - general trends  
- - Open access  
-- Hopes for open access  
-- Types of open access (define green, gold, hybrid, bronze, diamond etc)
-
-A foundational event of the Open Access movement was the Budapest Open Access Initiative (BOAI)[@Chan2002]. It was recognised in the initiative that scholarly publications were an important and public good, that, with the advent of the internet, could be shared completely freely to all those who wanted to read it, whether out of need or curiosity. By removing barriers to scientific literature it was hoped that open access would “*... accelerate research, enrich education, share the learning of the rich with the poor and the poor with the rich, make this literature as useful as it can be, and lay the foundation for uniting humanity in a common intellectual conversation and quest for knowledge*” [@Chan2002]. The Initiative recommended two complementary strategies to achieve these goals, firstly self-archiving in open repositories (so called green open access) and publication in completely open access journals (so called gold open access), usually associated with an article processing charge to the author. Subsequently other shades of open access publication have emerged. Hybrid open access required an article processing charge to publish openly in an otherwise closed journal. Bronze open access is a journal that is freely available to read, but does not have an open access license. Finally, diamond open access where the publication is openly licensed, but neither the author nor the reader pays charges.
-
-### Publishing overview - taxonomic  
-- Role of code  
-- Recent changes, future directions  
-- Conflation of e-publication with open access? (Melbourne code discussions)
-
-### Data integration work  
-- Material citations  
-- GBIF clustering  
-- Bionomia
-- Digital extended specimen
-
-### Related work  
-- State of collections  
-- Number of specimens available, future work  
-- Take-up of electronic publishing (taxonomy)  
-    We looked at the takeup of e-publication [@nicolson_impact_2017].
-- Take-up of open access (generally)
-
-### Proposal (definition of research questions)
-
-
+Here we explore patterns in publication of the names of vascular plants using data from the World Checklist of Vascular Plants (WCVP) and the International Plant Names Index (IPNI), along with data from global aggregators, to examine the degree and global distribution of Open Access publication of these important data. We make recommendations we feel will help better support work to document and conserve plant diversity for downstream use and suggest next steps for research and improvement of these data sets. 
