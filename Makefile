@@ -33,7 +33,7 @@ data/oaratio-wcvp%.png: downloads/ipni-oa-map-charts-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
-data/wcvp-map-composite-level-%.png: downloads/ipni-oa-map-charts-data.zip 
+data/wcvp-map-composite%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
 
