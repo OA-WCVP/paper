@@ -33,6 +33,11 @@ data/oaratio-wcvp%.png: downloads/ipni-oa-map-charts-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
+data/wcvp-map-composite-level-%.png: downloads/ipni-oa-map-charts-data.zip 
+	mkdir -p data
+	unzip -o $^ $@
+
+
 data/taxa2gbif%.md: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
@@ -148,10 +153,9 @@ build/%.md: data/%.md
 
 ipni_oatrends_charts:=build/ipni-oa-composite.png
 ipni_publ_charts:=build/ipni-oatrend-publ.png
-ipni_wcvp_map_charts_oaratio:=build/oaratio-wcvp-map-level-1.png build/oaratio-wcvp-map-level-2.png build/oaratio-wcvp-map-level-3.png 
-ipni_wcvp_map_charts_findability:=build/findability-wcvp-map-level-1.png build/findability-wcvp-map-level-2.png build/findability-wcvp-map-level-3.png
+ipni_wcvp_map_charts_composite:=build/wcvp-map-composite-level-1.png build/wcvp-map-composite-level-2.png wcvp-map-composite-level-3.png 
 
-charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts_oaratio) $(ipni_wcvp_map_charts_findability)
+charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts_composite)
 
 allcharts: $(charts)
 
