@@ -7,7 +7,7 @@ We attached the World Checklist of Vascular Plants (WCVP, [wcvp.science.kew.org/
 To look at the open access availability of digitised type material, we used the Global Biodiversity Information Facility (GBIF, [www.gbif.org](https://www.gbif.org)) to download a dataset of all vascular plant occurrences based on preserved specimens with a type status. We used the GBIF registry to determine the spatial coordinates of the data provider for each record. We integrated the GBIF backbone taxonomy [@registry-migrationgbiforg_gbif_2021] (used to organise the occurrence records) with WCVP to allow us to determine if the type specimen occurrence was mobilised to GBIF from within its native range. To make this assessment we executed a spatial join between the point location of the data provider, and the WGSRPD polgyons comprising the native range of the taxon. We conducted this analysis for the whole dataset, and for two time periods - post the Convention on Biological Diversity (1992-2021) and post Nagoya protocol (2014-2021). For the two temporally defined analyses, we only examined taxa which were first published in that date range.
 
 ```{.mermaid caption="Category assignment"}
-%%{init: {'theme': 'neutral' } }%%
+%%{init: {"flowchart": {"useMaxWidth": false},'theme': 'neutral' }}%%
 flowchart LR
     subgraph  
         direction LR
