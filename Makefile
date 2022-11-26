@@ -146,7 +146,7 @@ build/%.md: data/%.md
 	mkdir -p build
 	cp $^ $@
 
-ipni_oatrends_charts:=build/ipni-oatrend-year.png build/ipni-oastatustrendpc.png
+ipni_oatrends_charts:=build/ipni-oa-composite.png
 ipni_publ_charts:=build/ipni-oatrend-publ.png
 ipni_wcvp_map_charts_oaratio:=build/oaratio-wcvp-map-level-1.png build/oaratio-wcvp-map-level-2.png build/oaratio-wcvp-map-level-3.png 
 ipni_wcvp_map_charts_findability:=build/findability-wcvp-map-level-1.png build/findability-wcvp-map-level-2.png build/findability-wcvp-map-level-3.png
