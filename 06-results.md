@@ -1,12 +1,8 @@
 # Results
 
-## Open access takeup
+## Open access takeup and status
 
-![Open access status of bibliographic work containing nomenclatural events](ipni-oatrend-year.png)
-
-## What kind of open access is used
-
-![What kinds of open access are used](build/ipni-oastatustrendpc.png)
+![Open access takeup and status](ipni-oa-composite.png)
 
 ## Open access takeup by distribution
 
