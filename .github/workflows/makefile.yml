@@ -58,6 +58,9 @@ jobs:
     - name: Install pandoc mermaid filter
       run: npm install --global mermaid-filter
 
+    - name: Install pip packages
+      run: pip install -r requirements.txt
+      
     - name: Build all formats (PDF, docx and HTML)
       run: make all
       
