@@ -157,7 +157,7 @@ build/%.md: data/%.md
 	cp $^ $@
 
 ipni_oatrends_charts:=build/ipni-oa-composite.png
-ipni_publ_charts:=build/ipni-oatrend-publ.png
+ipni_publ_charts:=build/ipni-oatrend-publ-2019-2021.png
 ipni_wcvp_map_charts_composite:=build/wcvp-map-composite-level-1.png build/wcvp-map-composite-level-2.png build/wcvp-map-composite-level-3.png 
 
 charts=$(ipni_oatrends_charts) $(ipni_publ_charts) $(ipni_wcvp_map_charts_composite)
