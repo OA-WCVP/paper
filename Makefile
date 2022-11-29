@@ -25,7 +25,7 @@ data/ipni-oa%.png: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
-data/si-%.md.png: downloads/ipni-oa-data.zip
+data/si-%.md: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
