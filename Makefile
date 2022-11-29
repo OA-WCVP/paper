@@ -135,7 +135,7 @@ article_parts=00-preamble.yaml \
 			10-data_availability_statement.md \
 			11-conflict_of_interest_statement.md \
 			11a-appendix.md \
-			si-table-publ-2019-2021.md \
+			data/si-table-publ-2019-2021.md \
 			12-references.md 
 
 build/article.md: $(article_parts)
