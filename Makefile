@@ -25,6 +25,10 @@ data/ipni-oa%.png: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
+data/si-%.md.png: downloads/ipni-oa-data.zip
+	mkdir -p data
+	unzip -o $^ $@
+
 data/findability-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
@@ -131,6 +135,7 @@ article_parts=00-preamble.yaml \
 			10-data_availability_statement.md \
 			11-conflict_of_interest_statement.md \
 			11a-appendix.md \
+			si-table-publ-2019-2021.md \
 			12-references.md 
 
 build/article.md: $(article_parts)
