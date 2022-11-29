@@ -20,13 +20,13 @@ flowchart LR
                 IsOA_a ------->|No| Closed_a[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
                 IsOA_a ------->|Yes| Open_a[fa:fa-unlock <b>Open</b><br/>A version is available <br/>for the reader to access]
 
-                classDef Undiscoverable fill:white;
+                classDef Undiscoverable fill:#000000 color:white;
                     class Undiscoverable_a Undiscoverable;
 
                 classDef Closed fill:#c5c5c5;
                     class Closed_a Closed;
 
-                classDef Open fill:#79be78;
+                classDef Open fill:#ffffff;
                     class Open_a Open;
         end
 
