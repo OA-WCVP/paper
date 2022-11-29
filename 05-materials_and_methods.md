@@ -20,14 +20,14 @@ flowchart LR
                 IsOA_a ------->|No| Closed_a[fa:fa-lock <b>Closed</b><br/>Requires subscription or <br/>one-off per-article payment]
                 IsOA_a ------->|Yes| Open_a[fa:fa-unlock <b>Open</b><br/>A version is available <br/>for the reader to access]
 
-                classDef Undiscoverable fill:#000000 color:white;
-                    class Undiscoverable_a Undiscoverable;
+                classDef clsUndiscoverable fill:#000000 color:white;
+                    class Undiscoverable_a clsUndiscoverable;
 
-                classDef Closed fill:#c5c5c5;
-                    class Closed_a Closed;
+                classDef clsClosed fill:#c5c5c5;
+                    class Closed_a clsClosed;
 
-                classDef Open fill:#ffffff;
-                    class Open_a Open;
+                classDef clsOpen fill:#ffffff;
+                    class Open_a clsOpen;
         end
 
         subgraph "Category assignment - what kinds of open access used"
