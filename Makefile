@@ -136,6 +136,7 @@ article_parts=00-preamble.yaml \
 			11-conflict_of_interest_statement.md \
 			11a-appendix.md \
 			data/si-table-publ-2019-2021.md \
+			data/section-separator.md \
 			12-references.md 
 
 build/article.md: $(article_parts)
