@@ -105,10 +105,15 @@ data/section-separator.md:
 # Define variable holding all parts of the article, listed in order
 article_parts=00-preamble.yaml \
 			01-summary.md \
+			data/section-separator.md \
 			02-keywords.md \
+			data/section-separator.md \
 			03-societal_impact_statement.md \
+			data/section-separator.md \
 			04-introduction.md \
+			data/section-separator.md \
 			05-materials_and_methods.md \
+			data/section-separator.md \
 			06-results.md \
 			data/type-availability-header-all.md \
 			data/section-separator.md \
@@ -131,9 +136,13 @@ article_parts=00-preamble.yaml \
 			07-discussion.md \
 			data/section-separator.md \
 			08-acknowledgements.md \
+			data/section-separator.md \
 			09-author_contribution.md \
+			data/section-separator.md \
 			10-data_availability_statement.md \
+			data/section-separator.md \
 			11-conflict_of_interest_statement.md \
+			data/section-separator.md \
 			11a-appendix.md \
 			data/si-table-publ-2019-2021.md \
 			data/section-separator.md \
