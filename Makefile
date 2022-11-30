@@ -192,6 +192,7 @@ build/article.html: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
 			-F mermaid-filter \
 			--filter pandoc-fignos \
+			--filter pandoc-tablenos \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
 			--bibliography references.bib \
@@ -213,6 +214,7 @@ build/article.docx: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
 			-F mermaid-filter \
 			--filter pandoc-fignos \
+			--filter pandoc-tablenos \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
 			--bibliography references.bib \
@@ -233,6 +235,7 @@ build/article.pdf: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-i
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
 			-F mermaid-filter \
 			--filter pandoc-fignos \
+			--filter pandoc-tablenos \
 			--variable=date:"$(date_formatted)" \
 			--pdf-engine=lualatex \
 			--citeproc \
