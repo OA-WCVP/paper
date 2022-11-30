@@ -29,6 +29,10 @@ data/si-%.md: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
+data/%.yaml: downloads/ipni-oa-data.zip
+	mkdir -p data
+	unzip -o $^ $@
+
 data/findability-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
@@ -148,9 +152,12 @@ article_parts=00-preamble.yaml \
 			data/section-separator.md \
 			12-references.md 
 
-build/article.md: $(article_parts)
+build/article.md: $(article_parts) data/article-variables.yaml
 	mkdir -p build
-	cat $(article_parts) > $@
+	cat $(article_parts) > build/article-temp.md
+	pandoc --template build/article-temp.md --metadata-file data/article-variables.yaml build/article-temp.md > $@
+	rm build/article-temp.md
+	
 ###############################################################################
 # End of concatenation section
 ###############################################################################
