@@ -18,7 +18,7 @@ ADD sentence of IPNI registration prototype and leadup to Madrid 2024.
 
 **Publishers** could shorten the embargo period for articles with nomenclatural content, to allow broader dissemination through self-archiving. Publishers should also waive or lower publication costs for primary biodiversity data encouraging...
 
-As a botanical community we should facilitate and increase digitisation of herbaria to mobilise specimen data to promote research [@nelson_history_2019] [@hedrick_digitization_2020]
+As a botanical community we should facilitate and increase digitisation of herbaria to mobilise specimen data to promote research [@nelson_history_2019; @hedrick_digitization_2020]
 
 ## Future research work
     
