@@ -125,18 +125,18 @@ article_parts=00-preamble.yaml \
 			data/section-separator.md \
 			data/taxa2nativerangetypeavailability.md \
 			data/section-separator.md \
-			data/type-availability-header-cbd.md \
-			data/section-separator.md \
-			data/taxa2gbiftypeavailability-cbd.md \
-			data/section-separator.md \
-			data/taxa2nativerangetypeavailability-cbd.md \
-			data/section-separator.md \
-			data/type-availability-header-nagoya.md \
-			data/section-separator.md \
-			data/taxa2gbiftypeavailability-nagoya.md \
-			data/section-separator.md \
-			data/taxa2nativerangetypeavailability-nagoya.md \
-			data/section-separator.md \
+			# data/type-availability-header-cbd.md \
+			# data/section-separator.md \
+			# data/taxa2gbiftypeavailability-cbd.md \
+			# data/section-separator.md \
+			# data/taxa2nativerangetypeavailability-cbd.md \
+			# data/section-separator.md \
+			# data/type-availability-header-nagoya.md \
+			# data/section-separator.md \
+			# data/taxa2gbiftypeavailability-nagoya.md \
+			# data/section-separator.md \
+			# data/taxa2nativerangetypeavailability-nagoya.md \
+			# data/section-separator.md \
 			07-discussion.md \
 			data/section-separator.md \
 			08-acknowledgements.md \
