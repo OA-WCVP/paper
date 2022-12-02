@@ -7,7 +7,7 @@ We outline below some specific recommendations for actions that could aid access
 ## Recommendations
 
 **Authors** publishing new taxa in books should encourage deposition of taxonomic data in repositories eg. descriptions in treatment bank [@agosti_possible_2022] or other suitable repository [@miralles_repositories_2020]. Authors producing large taxonomic revisions including type citation information should mobilise these as material citation datasets to GBIF.
-Auhtors should include specimen catalogue numbers or persistent urls when citing specimens [@nelson_use_2018] and nomenclators should capture these identifiers for types to assist discovery and reuse of the specimen data.
+Authors should include specimen catalogue numbers or persistent urls when citing specimens [@nelson_use_2018] and nomenclators should capture these identifiers for types to assist discovery and reuse of the specimen data.
 
 **Nomenclators** have a potential role in promoting the understanding of open access amongst both authors and users of nomenclature. We recommend that flags are displayed alongside nomenclatural act records to indicate the OA status of the containing work. The publication record could also indicate its presence in the Directory of Open Access Journals (DOAJ).
 ADD sentence of IPNI registration prototype and leadup to Madrid 2024.
