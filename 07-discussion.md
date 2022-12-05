@@ -22,6 +22,4 @@ As a botanical community we should facilitate and increase digitisation of herba
 
 ## Future research work
     
-We propose future work on better understanding participants ability to use Open Access,by examining information that can be derived from authors and places of publication such as affiliations, career stage seniority, collaboration makeup and roles (collectors of specimen material from the field, identifiers of material in institutional collections and authors of published taxonomic work).
-
-TODO ADD concluding para.    
+We propose future work on better understanding participants ability to use Open Access, by examining information that can be derived from authors and places of publication such as affiliations, career stage seniority, collaboration makeup and roles (collectors of specimen material from the field, identifiers of material in institutional collections and authors of published taxonomic work).
