@@ -83,21 +83,6 @@ pandoc-filters/author-info-blocks.lua:
 # End of pandoc filter section
 ###############################################################################
 
-data/type-availability-header-all.md:
-	mkdir -p data
-	echo "### All" > $@
-	echo "" >> $@
-
-data/type-availability-header-cbd.md:
-	mkdir -p data
-	echo "### Convention on biological diversity (post 1992)" > $@
-	echo "" >> $@
-
-data/type-availability-header-nagoya.md:
-	mkdir -p data
-	echo "### Nagoya (post 2014)" > $@
-	echo "" >> $@
-
 data/section-separator.md:
 	mkdir -p data
 	echo " " > $@
@@ -119,11 +104,6 @@ article_parts=00-preamble.yaml \
 			05-materials_and_methods.md \
 			data/section-separator.md \
 			06-results.md \
-			data/type-availability-header-all.md \
-			data/section-separator.md \
-			data/taxa2gbiftypeavailability.md \
-			data/section-separator.md \
-			data/taxa2nativerangetypeavailability.md \
 			data/section-separator.md \
 			07-discussion.md \
 			data/section-separator.md \
