@@ -1,19 +1,3 @@
 # Author contributions
 
-CRediT (Contributor Roles Taxonomy):
-
-- Conceptualization
-- Data curation
-- Formal Analysis
-- Funding acquisition
-- Investigation
-- Methodology
-- Project administration
-- Resources
-- Software
-- Supervision
-- Validation
-- Visualization
-- Writing – original draft
-- Writing – review & editing
-
+Conceptualization: NN; Methodology: NN; Software: NN, MT; Validation: NN; Investigation: NN; Data Curation: NN; Writing – Original Draft: AP, QG, SK; Writing – Review & Editing: NN, AP; Visualization: NN, MT; Supervision: AP, SK; Project Administration: NN;
