@@ -1,7 +1,7 @@
 # paper
 Article draft for "Global access to botanical resources: assessing the digital availability of types and specimens and open access literature"
 
-This article repository is part of the OA-WCVP github organisation. Its sibling repositories ([gbif-literature](https://github.com/OA-WCVP/gbif-literature), [catalog-number-access](https://github.com/OA-WCVP/catalog-number-access) etc) are responsible for data access and analysis; this repository integrates their archived analytical runs into the paper output. 
+This article repository is part of the OA-WCVP github organisation. Its sibling repositories ([ipni-oa](https://github.com/OA-WCVP/ipni-oa), [ipni-oa-map-charts](https://github.com/OA-WCVP/ipni-oa-map-charts), [wcvp-gbif-processing](https://github.com/OA-WCVP/wcvp-gbif-processing) etc) are responsible for data access, analysis and visualisation; this repository integrates their archived analytical runs into the paper output. 
 
 ## Article structure
 
