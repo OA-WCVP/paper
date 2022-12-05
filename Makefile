@@ -46,11 +46,11 @@ data/wcvp-map-composite%.png: downloads/ipni-oa-map-charts-data.zip
 	unzip -o $^ $@
 
 
-data/taxa2gbif%.md: downloads/wcvp-gbif-processing-data.zip 
+data/taxa2gbif%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
 
-data/taxa2nativerange%.md: downloads/wcvp-gbif-processing-data.zip 
+data/taxa2nativerange%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
 
@@ -140,10 +140,10 @@ article_parts=00-preamble.yaml \
 			data/section-separator.md \
 			12-references.md 
 
-build/article.md: $(article_parts) data/article-variables.yaml
+build/article.md: $(article_parts) data/article-variables.yaml data/taxa2gbiftypeavailability.yaml data/taxa2nativerangetypeavailability.yaml
 	mkdir -p build
 	cat $(article_parts) > build/article-temp.md
-	pandoc --template build/article-temp.md --metadata-file data/article-variables.yaml build/article-temp.md > $@
+	pandoc --template build/article-temp.md --metadata-file data/article-variables.yaml --metadata-file data/taxa2gbiftypeavailability.yaml --metadata-file data/taxa2nativerangetypeavailability.yaml build/article-temp.md > $@
 	rm build/article-temp.md
 	
 ###############################################################################

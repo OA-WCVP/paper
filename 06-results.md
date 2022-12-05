@@ -16,4 +16,4 @@ Africa, South America and South Asia, some of the botanically most diverse areas
 
 ## Availability of digitised type material
 
-When considering the availability of open access digitised type specimens 69.03% taxa have type material available (257094 of 372430).  The percentage of data available from the continent, region or botanical country drops as the geographic scale narrows, from 31.4%  at continent level to 11.8% at country level.
+When considering the availability of open access digitised type specimens $taxa2gbiftypeavailability.taxa_with_types_available_pc$% taxa have type material available $taxa2gbiftypeavailability.taxa_with_types_available_count$ of $taxa2gbiftypeavailability.taxon_count$) in GBIF.  Examination of the intersection of the location of the data provider with the native range of the taxon shows that as the geographic scale narrows the percentage of taxa with type material mobilised from within the native range of the taxon drops, from $taxa2nativerangetypeavailability.continent_code_l1.taxon_represented_pc$%  at continent level to $taxa2nativerangetypeavailability.area_code_l3.taxon_represented_pc$% at country level.
