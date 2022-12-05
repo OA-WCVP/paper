@@ -10,8 +10,10 @@ When analysing the data by publication, we find that many journals active in the
 
 ## Open access takeup by distribution
 
-### TDWG level 2
+Africa, South America and South Asia, some of the botanically most diverse areas, have the greatest proportion of undiscoverable nomenclatural acts (figure  @fig:fig4 (i)), whereas Europe, North America and Australia have the lowest proportion.  When considering only the discoverable literature using DOIs (figure  @fig:fig4 (ii)), South America and South Asia have the lowest proportion of open publication of nomenclatural acts, though Africa  has a higher proportion.
 
 ![Findability and OA ratio, TDWG level 2](wcvp-map-composite-level-2.png){#fig:fig4}
 
 ## Availability of digitised type material
+
+When considering the availability of open access digitised type specimens 69.03% taxa have type material available (257094 of 372430).  The percentage of data available from the continent, region or botanical country drops as the geographic scale narrows, from 31.4%  at continent level to 11.8% at country level.
