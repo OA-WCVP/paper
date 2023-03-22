@@ -21,4 +21,4 @@ Authors should include specimen catalogue numbers or persistent urls when citing
 
 ## Future research work
     
-We propose future work on better understanding participants ability to use Open Access, by examining information that can be derived from authors and places of publication such as affiliations, career stage seniority, collaboration makeup and roles (collectors of specimen material from the field, identifiers of material in institutional collections and authors of published taxonomic work).
+We propose future work on better understanding participant's ability to use Open Access, by examining information that can be derived from authors and places of publication such as affiliations, career stage seniority, collaboration makeup and roles (e.g. as collectors of specimen material from the field, identifiers of material in institutional collections and authors of published taxonomic work).
