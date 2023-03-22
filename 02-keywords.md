@@ -1,4 +1,4 @@
 # Keywords
 
-vascular plants, herbarium, specimen, GBIF, open access, botanical nomenclature, taxonomic distribution
+botanical nomenclature, GBIF, herbarium, open access, specimen, taxonomic distribution, types, vascular plants 
 
