@@ -17,7 +17,7 @@ Authors should include specimen catalogue numbers or persistent urls when citing
 
 **Publishers** could shorten the embargo period for articles with nomenclatural content, to allow broader dissemination through self-archiving. Publishers should also waive or lower publication costs for primary biodiversity data encouraging greater use of the data and facilitating downstream research including allowing new data to facilitate urgent conservation action.
 
-**Funders and the botanical community** should facilitate and increase digitisation of herbaria particularly in South America, Africa and South Asia to mobilise specimen data to promote research [@nelson_history_2019; @hedrick_digitization_2020]
+**Funders and the botanical community** should facilitate wider mobilisation of specimen data to promote research, by increasing digitisation of herbaria particularly in South America, Africa and South Asia [@nelson_history_2019; @hedrick_digitization_2020]
 
 ## Future research work
     
