@@ -115,9 +115,9 @@ article_parts=00-preamble.yaml \
 			data/section-separator.md \
 			11-conflict_of_interest_statement.md \
 			data/section-separator.md \
-			11a-appendix.md \
-			data/si-table-publ-2019-2021.md \
-			data/section-separator.md \
+			# 11a-appendix.md \
+			# data/si-table-publ-2019-2021.md \
+			# data/section-separator.md \
 			12-references.md 
 
 build/article.md: $(article_parts) data/article-variables.yaml data/taxa2gbiftypeavailability.yaml data/taxa2nativerangetypeavailability.yaml
