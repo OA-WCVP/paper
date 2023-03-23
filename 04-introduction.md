@@ -20,15 +20,15 @@ Copyright is the right to determine how creative works are used, distributed and
 
 A foundational event of the Open Access movement was the Budapest Open Access Initiative (BOAI)[@chan_budapest_2002]. It was recognised in the initiative that scholarly publications were an important and public good, that, with the advent of the internet, could be shared completely freely to all those who wanted to read it, whether out of need or curiosity. By removing barriers to scientific literature it was hoped that open access would “… accelerate research, enrich education, share the learning of the rich with the poor and the poor with the rich, make this literature as useful as it can be, and lay the foundation for uniting humanity in a common intellectual conversation and quest for knowledge” [@chan_budapest_2002]. The Initiative recommended two complementary strategies to achieve these goals, firstly self-archiving in open repositories (so-called green open access) and publication in completely open access journals (so-called gold open access), usually associated with an article processing charge to the author. Subsequently other shades of open access publication have emerged that are detailed in table @tbl:id.
 
-| Type    | Description                                                                   | Who pays            | Example                      |
-| ------- | ----------------------------------------------------------------------------- | ------------------- | ---------------------------- |
-| Closed  | Not available to read without paying for access                               | Publisher           |                              |
-| Green   | self-archiving in open repositories                                           | Mixed               |                              |
-| Gold    | completely open access journals                                               | Author              | PhytoKeys                    |
-| Bronze  | freely available to read, but does not have an open access licence            | Publisher           | Phytoneuron                  |
-| Hybrid  | An article processing charge to publish openly in an otherwise closed journal | Author or publisher | Taxon                        |
-| Diamond | openly licensed, but neither the author nor the reader pays charges           | Publisher           | European Journal of Taxonomy |
-Table: Types of open access described, with indication of who bears the costs and examples of publications used in botanical nomenclature. {#tbl:id tag="T.1"}
+| Type         | Description                                                                   | Who pays            | Example                      |
+| -------------| ----------------------------------------------------------------------------- | ------------------- | ---------------------------- |
+| Closed       | Not available to read without paying for access                               | Reader              | Systematic Botany            |
+| OA - Green   | Self-archiving in open repositories                                           | Mixed               | Zenodo (repository)          |
+| OA - Gold    | Completely open access journals                                               | Author              | PhytoKeys                    |
+| OA - Bronze  | Freely available to read, but does not have an open access licence            | Publisher           | Phytoneuron                  |
+| OA - Hybrid  | An article processing charge to publish openly in an otherwise closed journal | Author or publisher | Taxon                        |
+| OA - Diamond | Openly licensed, but neither the author nor the reader pays charges           | Publisher           | European Journal of Taxonomy |
+Table: Types of open access (OA) described, with indication of who bears the costs and examples of publications or archives used in botanical nomenclature. {#tbl:id tag="T.1"}
 
 Here we explore patterns in publication of the names of vascular plants using data from the World Checklist of Vascular Plants (WCVP) and the International Plant Names Index (IPNI), along with data from global aggregators, to examine the degree and global distribution of Open Access publication of these important data. We make recommendations we feel will help better support work to document and conserve plant diversity for downstream use and suggest next steps for research and improvement of these data sets. 
 
