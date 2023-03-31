@@ -7,7 +7,7 @@
 # trigger the regeneration of the compiled output.
 
 python_launch_cmd=python
-python_launch_cmd=winpty python
+# python_launch_cmd=winpty python
 
 ###############################################################################
 # Gather results of archived analytical runs
@@ -32,8 +32,7 @@ data/si-%.md: downloads/ipni-oa-data.zip
 data/%.yaml: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
-	echo $@
-	cat $@
+	$(python_launch_cmd) util/format-numeric-variables.py $@ $@	
 
 data/findability-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
@@ -47,19 +46,15 @@ data/wcvp-map-composite%.png: downloads/ipni-oa-map-charts-data.zip
 	mkdir -p data
 	unzip -o $^ $@
 
-
 data/taxa2gbif%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
-	echo $@
-	cat $@
-	
+	$(python_launch_cmd) util/format-numeric-variables.py $@ $@	
 
 data/taxa2nativerange%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
-	echo $@
-	cat $@
+	$(python_launch_cmd) util/format-numeric-variables.py $@ $@	
 
 ###############################################################################
 # End of archived analytical runs section
