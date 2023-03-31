@@ -32,6 +32,8 @@ data/si-%.md: downloads/ipni-oa-data.zip
 data/%.yaml: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
+	echo $^
+	cat $^
 
 data/findability-wcvp%.png: downloads/ipni-oa-map-charts-data.zip 
 	mkdir -p data
@@ -49,10 +51,15 @@ data/wcvp-map-composite%.png: downloads/ipni-oa-map-charts-data.zip
 data/taxa2gbif%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
+	echo $^
+	cat $^
+	
 
 data/taxa2nativerange%.yaml: downloads/wcvp-gbif-processing-data.zip 
 	mkdir -p data
 	unzip -o $^ $@
+	echo $^
+	cat $^
 
 ###############################################################################
 # End of archived analytical runs section
