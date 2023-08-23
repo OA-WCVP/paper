@@ -7,7 +7,7 @@ When analysing the IPNI data, we find that many journals active in the publicati
 
 ![Open access takeup and status](ipni-oa-composite.png){#fig:fig2}
 
-![Bibliographic works containing nomenclatural events published between 2019 and 2021 and their use of open access, coverage of top 80% of dataset (journal abbreviations follow IPNI)](ipni-oatrend-publ-2019-2021.png){#fig:fig3 height=90% }
+![Bibliographic works containing nomenclatural events published between 2019 and 2021 and their use of open access, coverage of top 80% of dataset (journal abbreviations follow IPNI, asterisk indicates that the title is included in the Directory of Open Access Journals)](ipni-oatrend-publ-2019-2021.png){#fig:fig3 height=90% }
 
 ## Open access takeup by distribution
 
