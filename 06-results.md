@@ -5,7 +5,7 @@ On average each year, less than one quarter ($oa_annual_pc_avg$%) of nomenclatur
 The distribution of nomenclatural acts in different publication titles follows a "long tail" (leptokurtic) pattern. We have visualised the number of nomenclatural acts per publication titles and their open / closed statuses using a more restricted time scale (2019-2021), to better reflect current working practices (Figure  @fig:fig3). For legibility, we cut the "long tail" at 80% of the dataset.
 When analysing the IPNI data, we find that many journals active in the publication of nomenclatural acts are undiscoverable - the containing bibliographic work is not labelled with a DOI (Figure  @fig:fig3) - or the acts are labelled with a DOI which is now unresolvable ($dois_unresolvable$ in total, in $publications_w_unresolvable_dois$ different publications).
 
-![Open access takeup and status for nomenclatural acts recorded in the International Plant Names Index per year of study (2012-2021](ipni-oa-composite.png){#fig:fig2}
+![Open access takeup and status for nomenclatural acts recorded in the International Plant Names Index per year of study ($year_min$-$year_max$)](ipni-oa-composite.png){#fig:fig2}
 
 ![Bibliographic works containing vascular plant nomenclatural events published between 2019 and 2021 and their use of open access (OA), coverage of top 80% of the International Plant Names Index (IPNI) dataset (journal abbreviations follow IPNI, asterisk indicates that the title is included in the Directory of Open Access Journals)](ipni-oatrend-publ-2019-2021.png){#fig:fig3 height=90% }
 
