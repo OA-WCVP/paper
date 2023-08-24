@@ -5,15 +5,15 @@ On average each year, less than one quarter ($oa_annual_pc_avg$%) of nomenclatur
 The distribution of nomenclatural acts in different publication titles follows a "long tail" (leptokurtic) pattern. We have visualised the number of nomenclatural acts per publication titles and their open / closed statuses using a more restricted time scale (2019-2021), to better reflect current working practices (Figure  @fig:fig3). For legibility, we cut the "long tail" at 80% of the dataset.
 When analysing the IPNI data, we find that many journals active in the publication of nomenclatural acts are undiscoverable - the containing bibliographic work is not labelled with a DOI (Figure  @fig:fig3) - or the acts are labelled with a DOI which is now unresolvable ($dois_unresolvable$ in total, in $publications_w_unresolvable_dois$ different publications).
 
-![Open access takeup and status](ipni-oa-composite.png){#fig:fig2}
+![Open access takeup and status for nomenclatural acts recorded in the International Plant Names Index per year of study (2012-2021](ipni-oa-composite.png){#fig:fig2}
 
-![Bibliographic works containing nomenclatural events published between 2019 and 2021 and their use of open access, coverage of top 80% of dataset (journal abbreviations follow IPNI, asterisk indicates that the title is included in the Directory of Open Access Journals)](ipni-oatrend-publ-2019-2021.png){#fig:fig3 height=90% }
+![Bibliographic works containing vascular plant nomenclatural events published between 2019 and 2021 and their use of open access (OA), coverage of top 80% of the International Plant Names Index (IPNI) dataset (journal abbreviations follow IPNI, asterisk indicates that the title is included in the Directory of Open Access Journals)](ipni-oatrend-publ-2019-2021.png){#fig:fig3 height=90% }
 
 ## Open access takeup by distribution
 
 Africa, South America and South Asia, some of the botanically most diverse areas, have the greatest proportion of undiscoverable nomenclatural acts (Figure  @fig:fig4 (i)), whereas Europe, North America and Australia have the lowest proportion.  When considering only the discoverable literature using DOIs (Figure  @fig:fig4 (ii)), South America and South Asia have the lowest proportion of open publication of nomenclatural acts, though Africa  has a higher proportion.
 
-![Findability and OA ratio, TDWG level 2](wcvp-map-composite-level-2.png){#fig:fig4}
+![Proportion of International Plant Names Index (IPNI) nomenclatural act records which are non-discoverable and their ratio of open to closed access by World Geographic Scheme for Recording Plant Distributions (WGSRPD) level 2](wcvp-map-composite-level-2.png){#fig:fig4}
 
 ## Availability of digitised type specimen metadata
 
