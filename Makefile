@@ -21,6 +21,10 @@ downloads/%-data.zip: util/download-artifact.py
 	mkdir -p downloads
 	$(python_launch_cmd) util/download-artifact.py $*
 
+downloads/ppp.csl:
+	mkdir -p downloads
+	wget --quiet -O $@ https://raw.githubusercontent.com/citation-style-language/styles/master/new-phytologist.csl
+
 data/ipni-oa%.png: downloads/ipni-oa-data.zip
 	mkdir -p data
 	unzip -o $^ $@
@@ -159,7 +163,7 @@ allcharts: $(charts)
 #------------------------------------------------------------------------------
 # HTML version
 #------------------------------------------------------------------------------
-build/article.html: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua build/article.md $(charts) references.bib
+build/article.html: downloads/ppp.csl pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua build/article.md $(charts) references.bib
 	mkdir -p build
 	pandoc 	\
 			--lua-filter=pandoc-filters/scholarly-metadata.lua \
@@ -168,6 +172,7 @@ build/article.html: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 			--filter pandoc-xnos \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
+			--csl downloads/ppp.csl \
 			--bibliography references.bib \
 			-o $@ \
 			--verbose \
@@ -180,7 +185,7 @@ html: build/article.html
 #------------------------------------------------------------------------------
 # DOCX version
 #------------------------------------------------------------------------------
-build/article.docx: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua downloads/reference.docx build/article.md $(charts) references.bib
+build/article.docx: downloads/ppp.csl pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua downloads/reference.docx build/article.md $(charts) references.bib
 	mkdir -p build
 	pandoc 	\
 			--lua-filter=pandoc-filters/scholarly-metadata.lua \
@@ -189,6 +194,7 @@ build/article.docx: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-
 			--filter pandoc-xnos \
 			--variable=date:"$(date_formatted)" \
 			--citeproc \
+			--csl downloads/ppp.csl \
 			--bibliography references.bib \
 			-o $@ \
 			--verbose \
@@ -201,7 +207,7 @@ docx: build/article.docx
 #------------------------------------------------------------------------------
 # PDF version
 #------------------------------------------------------------------------------
-build/article.pdf: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua build/article.md $(charts) references.bib
+build/article.pdf: downloads/ppp.csl pandoc-filters/scholarly-metadata.lua pandoc-filters/author-info-blocks.lua build/article.md $(charts) references.bib
 	mkdir -p build
 	pandoc 	--lua-filter=pandoc-filters/scholarly-metadata.lua \
 			--lua-filter=pandoc-filters/author-info-blocks.lua \
@@ -210,6 +216,7 @@ build/article.pdf: pandoc-filters/scholarly-metadata.lua pandoc-filters/author-i
 			--variable=date:"$(date_formatted)" \
 			--pdf-engine=lualatex \
 			--citeproc \
+			--csl downloads/ppp.csl \
 			--bibliography references.bib \
 			-o $@ \
 			--verbose \
